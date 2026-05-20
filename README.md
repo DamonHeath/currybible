@@ -17,12 +17,6 @@ This is a clean HTML/CSS/JavaScript representation of the proposed profitable si
 - Improved review/archive card direction
 - Trust-first sponsored content policy
 
-## What this prototype is not
-
-This is **not** a WordPress theme yet.
-
-Do not upload these files directly over the live `wp-content/themes/currybible` folder. This prototype is for visual review first. After it is approved, the layout should be integrated carefully into the custom WordPress theme templates.
-
 ## File structure
 
 ```text
@@ -58,38 +52,9 @@ curry-bible-profit-prototype/
 
 ## How to view locally
 
-Open `index.html` in your browser.
+Open `https://damonheath.github.io/currybible/` in your browser.
 
 No build step is needed.
-
-## How to put it on GitHub
-
-1. Create a new folder on your computer.
-2. Put all these files inside it.
-3. Open that folder in VS Code.
-4. Run:
-
-```bash
-git init
-git add .
-git commit -m "Initial Curry Bible profitable prototype"
-```
-
-5. Create a new GitHub repository.
-6. Push this folder to GitHub.
-7. In GitHub, go to:
-
-```text
-Settings → Pages → Deploy from branch → main → /root
-```
-
-8. GitHub will give you a preview URL.
-
-## Recommended GitHub repo name
-
-```text
-curry-bible-profit-prototype
-```
 
 ## Core commercial idea
 
@@ -105,16 +70,3 @@ Paid praise is poison.
 
 Review scores must remain independent. If that trust goes, the whole brand loses its value.
 
-## Suggested integration order after approval
-
-1. Back up the live WordPress site.
-2. Create a staging copy or local WordPress install.
-3. Update the navigation in `header.php`.
-4. Update homepage sections in `front-page.php`.
-5. Add a `page-for-curry-houses.php` template.
-6. Add a `page-rankings.php` template.
-7. Add a `page-curry-map.php` template.
-8. Add a `page-approved.php` template.
-9. Add owner CTA blocks to `single.php`.
-10. Move final CSS into `assets/css/styles.css`.
-11. Test mobile layout before publishing.
