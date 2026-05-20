@@ -1,0 +1,48 @@
+# Operating system junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/project settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies/build folders if this prototype is later upgraded
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# WordPress/site backups - do not commit full live backups here
+public_html/
+public_html.zip
+public_html.rar
+wp-config.php
+wp-content/uploads/cache/
+wp-content/cache/
+*.sql
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+
+# Compressed exports/backups
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
