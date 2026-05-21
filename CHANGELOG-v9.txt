@@ -1,0 +1,21 @@
+Curry Bible static conversion v9 - Homepage structure and legacy page links
+
+Changed:
+- Added a new homepage section: "The Point of Curry Bible".
+- Added respectful homepage cards for Our Story and Our Mission.
+- Added new static pages:
+  - our-story.html
+  - awards.html
+  - contact.html
+  - policies.html
+- Added footer links for:
+  - Our Story
+  - Our Mission
+  - Currier of the Month & Curry Cunt
+  - Contact
+  - Policies
+- Lightly restructured the homepage underneath the hero.
+- Kept the hero unchanged.
+- Kept existing information; nothing major was removed.
+- Kept the current clean Curry Bible style.
+- Left the Arcade untouched.

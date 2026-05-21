@@ -3299,3 +3299,248 @@ body.dark-mode .package-card {
     border-radius: 24px;
   }
 }
+
+/* =====================
+   HOMEPAGE RESTRUCTURE V9
+===================== */
+
+.point-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.point-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.point-copy h2,
+.explore-section h2 {
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+}
+
+.point-copy p:not(.eyebrow),
+.section-support-text {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 760px;
+}
+
+.point-copy p + p:not(.eyebrow) {
+  margin-top: 1rem;
+}
+
+.point-links {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.point-card {
+  min-height: 250px;
+  border-radius: 32px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.point-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 26, 18, 0.88), rgba(43, 26, 18, 0.55));
+  z-index: -1;
+}
+
+.story-point-card {
+  background:
+    url("../../wp-content/uploads/2025/11/ChatGPT-Image-Nov-16-2025-04_17_52-PM-1100x450.png"),
+    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.mission-point-card {
+  background:
+    url("../../wp-content/uploads/2026/05/Curry-and-Naan-1-1080x450.jpeg"),
+    url("https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.point-card h3 {
+  font-size: clamp(1.6rem, 3vw, 2.7rem);
+  line-height: 1;
+  max-width: 540px;
+  margin-bottom: 1rem;
+}
+
+.point-card span,
+.text-link {
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.point-card span {
+  color: #fff1d8;
+}
+
+.journey-refined {
+  padding-top: 3rem;
+}
+
+.traditions-section .text-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+.light-link {
+  color: #f5e6d3;
+}
+
+.split-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
+}
+
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.browse-card {
+  min-height: 280px;
+  padding: 1.5rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.browse-card:hover {
+  transform: translateY(-5px);
+}
+
+.browse-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(43, 26, 18, 0.25), rgba(43, 26, 18, 0.86));
+  z-index: -1;
+}
+
+.browse-card span {
+  max-width: 180px;
+  line-height: 1;
+}
+
+.uk-browse-card {
+  background-image: url("../../wp-content/uploads/2026/04/Eating-At-Nurr-1080x450.jpeg"), url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80");
+}
+
+.europe-browse-card {
+  background-image: url("../../wp-content/uploads/2025/11/ChatGPT-Image-Nov-16-2025-03_40_36-PM-1024x450.png"), url("https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=80");
+}
+
+.cool-browse-card {
+  background-image: url("../../wp-content/uploads/2026/05/Curry-and-Naan-1-1080x450.jpeg"), url("https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=80");
+}
+
+.return-browse-card {
+  background-image: url("../../wp-content/uploads/2026/01/Jumaira-Cover-Photo-1100x450.jpeg"), url("https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=80");
+}
+
+body.dark-mode .point-card,
+body.dark-mode .browse-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 980px) {
+  .point-section,
+  .split-heading {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .browse-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .point-card,
+  .browse-card {
+    border-radius: 24px;
+    min-height: 220px;
+  }
+
+  .browse-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================
+   NEW SUPPORTING PAGES V9
+===================== */
+
+.story-hero-page {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.78), rgba(43, 26, 18, 0.82)),
+    url("../../wp-content/uploads/2025/11/ChatGPT-Image-Nov-16-2025-04_17_52-PM-1100x450.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.awards-hero-page {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.78), rgba(43, 26, 18, 0.82)),
+    url("../../wp-content/uploads/2025/11/ChatGPT-Image-Nov-15-2025-05_30_23-PM-1100x450.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-hero-page {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.78), rgba(43, 26, 18, 0.82)),
+    url("../../wp-content/uploads/2026/05/The-Outside-1100x450.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.policies-hero-page {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.78), rgba(43, 26, 18, 0.82)),
+    url("../../wp-content/uploads/2026/04/Eating-At-Nurr-1080x450.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.traditions-page-grid {
+  padding-bottom: 2rem;
+}
+
+.footer-links {
+  column-gap: 1rem;
+}
