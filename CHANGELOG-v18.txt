@@ -1,0 +1,6 @@
+# v18 - Mobile Header Button Stack
+
+Changed:
+- Stacked the Get Featured and Dark Mode buttons vertically on mobile.
+- Kept the Curry Bible title readable instead of shrinking it heavily.
+- Left desktop/tablet header, homepage order, hero, Arcade, reviews, Curry Map, and For Curry Houses unchanged.

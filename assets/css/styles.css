@@ -1851,20 +1851,32 @@ img.twemoji,
     min-height: 78px;
     padding: 1rem 5%;
     gap: 1rem;
+    align-items: center;
   }
 
-  .theme-toggle {
-    padding: 0.65rem 0.85rem;
-    font-size: 0.8rem;
+  .header-left {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .logo {
+    line-height: 1.1;
   }
 
   .header-actions {
-    gap: 0.45rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.55rem;
+    flex: 0 0 auto;
   }
 
-  .header-featured-btn {
-    padding: 0.62rem 0.8rem;
-    font-size: 0.78rem;
+  .header-featured-btn,
+  .theme-toggle {
+    width: clamp(126px, 34vw, 154px);
+    min-height: 44px;
+    padding: 0.7rem 0.85rem;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .main-nav {
