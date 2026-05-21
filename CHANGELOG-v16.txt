@@ -1,0 +1,6 @@
+Curry Bible static conversion v16
+
+Changed:
+- Moved the homepage Approved Gear / affiliate items section so it appears directly after “The Point of Curry Bible” and before “Our Journey”.
+- This places it between the “We are here to find…” section and the “From mates around the table…” section, exactly as requested.
+- No hero, header, arcade, reviews, Curry Map, or For Curry Houses changes were made.
