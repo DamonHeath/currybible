@@ -1,0 +1,7 @@
+# v19 — Mobile scroll header
+
+- Mobile header now hides while scrolling down.
+- Mobile header reappears when scrolling up.
+- Header remains visible when near the top of the page.
+- Header remains visible while the burger menu is open.
+- Desktop and tablet header behaviour is unchanged.

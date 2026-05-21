@@ -71,6 +71,7 @@ img {
   background: rgba(245, 230, 211, 0.92);
   backdrop-filter: blur(14px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.28s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 body.dark-mode .site-header {
@@ -1852,6 +1853,15 @@ img.twemoji,
     padding: 1rem 5%;
     gap: 1rem;
     align-items: center;
+    will-change: transform;
+  }
+
+  .site-header.mobile-header-hidden {
+    transform: translateY(-115%);
+  }
+
+  .site-header.mobile-menu-open {
+    transform: translateY(0);
   }
 
   .header-left {
