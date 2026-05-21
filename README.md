@@ -44,3 +44,8 @@ The main header now uses a simplified review structure:
 - Dark Mode
 
 The new `reviews.html` page acts as the review hub, linking to Curry Bible UK, Curry Bible Europe, Cool Curries, Return Visits, View by Rank Order, and the restaurant-owner enquiry route.
+
+
+## V6 update
+
+Added `for-curry-houses.html` as the commercial Curry Bible owner/opportunities page, linked from the header, footer, homepage owner CTA and Reviews hub. This is still a static GitHub Pages preview; the enquiry button points to the existing external form.

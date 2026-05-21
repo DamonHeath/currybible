@@ -3119,3 +3119,138 @@ body.dark-mode .map-list-card {
     display: none;
   }
 }
+
+/* =====================
+   FOR CURRY HOUSES V6
+===================== */
+
+.curry-house-hero {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.72), rgba(43, 26, 18, 0.86)),
+    url("../../wp-content/uploads/2026/05/The-Outside-1100x450.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.curry-house-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.curry-house-intro h2,
+.opportunity-section .section-heading h2,
+.package-section .section-heading h2,
+.promise-card h2,
+.curry-house-final h2 {
+  font-size: clamp(2.3rem, 5vw, 5rem);
+  line-height: 0.95;
+}
+
+.curry-house-intro p,
+.opportunity-section .section-heading p,
+.opportunity-card p,
+.package-card p,
+.package-card li,
+.promise-card p,
+.curry-house-final p {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.curry-house-intro p + p,
+.promise-card p + p {
+  margin-top: 1rem;
+}
+
+.opportunity-grid,
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.opportunity-card,
+.package-card,
+.promise-card {
+  background: var(--surface);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.opportunity-card,
+.package-card {
+  padding: 2.2rem;
+}
+
+.opportunity-card h3,
+.package-card h3 {
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.promise-band {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.promise-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: linear-gradient(135deg, #2b1a12, #7c241d);
+  color: white;
+}
+
+.promise-card p,
+.promise-card .eyebrow {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.package-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.package-card ul {
+  margin-top: 1rem;
+  padding-left: 1.15rem;
+}
+
+.featured-package {
+  background: linear-gradient(135deg, #fff1d8, #d9a066);
+  color: #2b1a12;
+}
+
+.featured-package p,
+.featured-package li {
+  color: #3a2619;
+}
+
+.curry-house-final p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+}
+
+body.dark-mode .opportunity-card,
+body.dark-mode .package-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  .curry-house-intro,
+  .opportunity-grid,
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .opportunity-card,
+  .package-card,
+  .promise-card {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+}
