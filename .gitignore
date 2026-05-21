@@ -1,28 +1,21 @@
-# OS/editor junk
+# OS/editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Dependencies/build output
-node_modules/
-dist/
-build/
-.cache/
+# Logs
+*.log
 
-# WordPress/backups/secrets - do not commit these
-wp-config.php
-*.sql
-*.sql.gz
+# Archives/backups
 *.zip
 *.rar
 *.7z
 *.tar
-*.tar.gz
-backups/
-backup/
-public_html/
+*.gz
 
-# Environment files
+# WordPress/database secrets should not be added to this static repo
+wp-config.php
+*.sql
+*.sqlite
 .env
-.env.*

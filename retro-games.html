@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retro Games | Curry Bible</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-left">
+    <button id="burgerMenu" class="burger-menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">Curry Bible</a>
+  </div>
+  <nav id="mainNav" class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="our-mission.html">Our Mission</a>
+    <a href="curry-bible-uk.html">Curry Bible UK</a>
+    <a href="curry-bible-europe.html">Curry Bible Europe</a>
+    <a href="cool-curries.html">Cool Curries</a>
+    <a href="return-visits.html">Return Visits</a>
+    <a href="retro-games.html">Retro Games</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle">Dark Mode</button>
+</header>
+<main>
+  <section class="retro-hero">
+    <div class="retro-hero-content">
+      <p class="eyebrow">Retro Games</p>
+      <h1>Retro games, Curry Bible style.</h1>
+      <p>
+        Too full to move? Good. Stay seated, chase the high score, and prove you have better reactions
+        than the rest of the Curry Bible table.
+      </p>
+    </div>
+  </section>
+
+  <section class="section retro-intro">
+    <div>
+      <p class="eyebrow">Play Now</p>
+      <h2>Three arcade classics. Three global leaderboards. One Curry Bible table.</h2>
+    </div>
+
+    <p>
+      This is the Curry Bible retro games section: Tetris for the line-clearers, Pac-Man for the maze-runners, and Minesweeper for the brave souls who think guessing is a strategy. Pick your game, drop it down, and chase the leaderboard.
+    </p>
+  </section>
+
+  <details class="tetris-page-shell arcade-game-disclosure">
+    <summary class="arcade-game-summary">
+      <div class="tetris-page-header">
+        <div>
+          <p class="eyebrow">Curry Bible Arcade</p>
+          <h2>Tetris</h2>
+        </div>
+
+        <p>
+          Clear lines, climb the leaderboard, and do not embarrass yourself after a full curry.
+        </p>
+      </div>
+      <span class="arcade-chevron" aria-hidden="true">⌄</span>
+    </summary>
+
+    <div class="tetris-v2 arcade-game-body" id="tetris-v2">
+      <div class="tetris-layout">
+        <div class="tetris-stage" id="tetris-stage">
+          <canvas width="320" height="640" id="tetris-game"></canvas>
+
+          <div class="tetris-overlay" id="tetris-overlay">
+            <div class="tetris-card">
+              <h2 class="tetris-title" id="tetris-title">Tetris</h2>
+
+              <label class="tetris-label" for="tetris-difficulty">Difficulty</label>
+              <select id="tetris-difficulty" class="tetris-select">
+                <option value="easy">Easy</option>
+                <option value="normal" selected>Normal</option>
+                <option value="hard">Hard</option>
+              </select>
+
+              <button class="tetris-primary" id="tetris-play-btn" type="button">Play Now</button>
+
+              <div class="tetris-gameover" id="tetris-gameover" style="display:none;">
+                <p class="tetris-subtext" id="tetris-final"></p>
+
+                <label class="tetris-label" for="tetris-name">Your name</label>
+                <input id="tetris-name" class="tetris-input" type="text" maxlength="16" placeholder="Damon" />
+
+                <button class="tetris-secondary" id="tetris-save-score" type="button">Save Score</button>
+                <button class="tetris-primary" id="tetris-restart-btn" type="button">Restart</button>
+              </div>
+
+              <details class="tetris-rules">
+                <summary>Rules & controls</summary>
+
+                <div class="tetris-rules-body">
+                  <p><strong>Goal:</strong> Clear lines by filling rows with blocks. Each cleared line gives points. The game speeds up as you level up.</p>
+                  <ul>
+                    <li><strong>Move:</strong> Left / Right</li>
+                    <li><strong>Rotate:</strong> Up / Rotate button</li>
+                    <li><strong>Soft drop:</strong> Down</li>
+                    <li><strong>Hard drop:</strong> Space / Drop button</li>
+                    <li><strong>Hold:</strong> C / Hold button</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <aside class="tetris-panel">
+          <div class="tetris-stats">
+            <div class="tetris-stat">
+              <span>Score</span>
+              <strong id="tetris-score">0</strong>
+            </div>
+
+            <div class="tetris-stat">
+              <span>Level</span>
+              <strong id="tetris-level">1</strong>
+            </div>
+
+            <div class="tetris-stat">
+              <span>Lines</span>
+              <strong id="tetris-lines">0</strong>
+            </div>
+          </div>
+
+          <div class="tetris-previews">
+            <div class="tetris-preview">
+              <span>Next</span>
+              <canvas width="128" height="128" id="tetris-next"></canvas>
+            </div>
+
+            <div class="tetris-preview">
+              <span>Hold</span>
+              <canvas width="128" height="128" id="tetris-hold"></canvas>
+            </div>
+          </div>
+
+          <div class="tetris-highscores">
+            <h3>Top Scores</h3>
+            <ol id="tetris-highscore-list"></ol>
+          </div>
+        </aside>
+      </div>
+
+      <div class="tetris-controls" id="tetris-controls" aria-label="Tetris controls">
+        <button type="button" class="tetris-btn" data-action="left">Left</button>
+        <button type="button" class="tetris-btn" data-action="rotate">Rotate</button>
+        <button type="button" class="tetris-btn" data-action="right">Right</button>
+        <button type="button" class="tetris-btn" data-action="down">Down</button>
+        <button type="button" class="tetris-btn" data-action="drop">Drop</button>
+        <button type="button" class="tetris-btn" data-action="hold">Hold</button>
+      </div>
+    </div>
+  </details>
+
+  <details class="tetris-page-shell pacman-page-shell arcade-game-disclosure">
+    <summary class="arcade-game-summary">
+      <div class="tetris-page-header">
+        <div>
+          <p class="eyebrow">Curry Bible Arcade</p>
+          <h2>Pac-Man</h2>
+        </div>
+
+        <p>
+          Dodge ghosts, clear pellets, grab power curries, and try not to get cornered like a rookie.
+        </p>
+      </div>
+      <span class="arcade-chevron" aria-hidden="true">⌄</span>
+    </summary>
+
+    <div class="tetris-v2 pacman-v2 arcade-game-body" id="pacman-v2">
+      <div class="tetris-layout pacman-layout">
+        <div class="tetris-stage pacman-stage" id="pacman-stage">
+          <canvas width="448" height="496" id="pacman-game"></canvas>
+
+          <div class="tetris-overlay pacman-overlay" id="pacman-overlay">
+            <div class="tetris-card pacman-card">
+              <h2 class="tetris-title" id="pacman-title">Pac-Man</h2>
+
+              <label class="tetris-label" for="pacman-difficulty">Difficulty</label>
+              <select id="pacman-difficulty" class="tetris-select">
+                <option value="easy">Easy</option>
+                <option value="normal" selected>Normal</option>
+                <option value="hard">Hard</option>
+              </select>
+
+              <button class="tetris-primary" id="pacman-play-btn" type="button">Play Now</button>
+
+              <div class="tetris-gameover" id="pacman-gameover" style="display:none;">
+                <p class="tetris-subtext" id="pacman-final"></p>
+
+                <label class="tetris-label" for="pacman-name">Your name</label>
+                <input id="pacman-name" class="tetris-input" type="text" maxlength="16" placeholder="Damon" />
+
+                <button class="tetris-secondary" id="pacman-save-score" type="button">Save Score</button>
+                <button class="tetris-primary" id="pacman-restart-btn" type="button">Restart</button>
+              </div>
+
+              <details class="tetris-rules pacman-rules">
+                <summary>Rules & controls</summary>
+
+                <div class="tetris-rules-body">
+                  <p><strong>Goal:</strong> Eat every pellet without getting caught. Power curries let you eat ghosts for bonus points.</p>
+                  <ul>
+                    <li><strong>Move:</strong> Arrow keys / WASD</li>
+                    <li><strong>Mobile:</strong> Use the direction buttons below</li>
+                    <li><strong>Pellet:</strong> 10 points</li>
+                    <li><strong>Power curry:</strong> 50 points</li>
+                    <li><strong>Ghost:</strong> 200 points while powered up</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <div class="tetris-controls pacman-controls" id="pacman-controls" aria-label="Pac-Man controls">
+          <button type="button" class="tetris-btn pacman-btn" data-direction="left">Left</button>
+          <button type="button" class="tetris-btn pacman-btn" data-direction="up">Up</button>
+          <button type="button" class="tetris-btn pacman-btn" data-direction="right">Right</button>
+          <button type="button" class="tetris-btn pacman-btn" data-direction="down">Down</button>
+        </div>
+
+        <aside class="tetris-panel pacman-panel">
+          <div class="tetris-stats pacman-stats">
+            <div class="tetris-stat">
+              <span>Score</span>
+              <strong id="pacman-score">0</strong>
+            </div>
+
+            <div class="tetris-stat">
+              <span>Level</span>
+              <strong id="pacman-level">1</strong>
+            </div>
+
+            <div class="tetris-stat">
+              <span>Lives</span>
+              <strong id="pacman-lives">3</strong>
+            </div>
+          </div>
+
+          <div class="pacman-mini-panel">
+            <h3>How it plays</h3>
+            <p>Classic maze chasing: pellets, ghosts, power-ups, levels, and a global leaderboard.</p>
+          </div>
+
+          <div class="tetris-highscores pacman-highscores">
+            <h3>Top Scores</h3>
+            <ol id="pacman-highscore-list"></ol>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </details>
+
+
+  <details class="tetris-page-shell minesweeper-page-shell arcade-game-disclosure">
+    <summary class="arcade-game-summary">
+      <div class="tetris-page-header">
+        <div>
+          <p class="eyebrow">Curry Bible Arcade</p>
+          <h2>Minesweeper</h2>
+        </div>
+
+        <p>
+          Clear the board, flag the hidden dangers, and try not to blow yourself up like an overconfident rookie.
+        </p>
+      </div>
+      <span class="arcade-chevron" aria-hidden="true">⌄</span>
+    </summary>
+
+    <div class="tetris-v2 minesweeper-v2 arcade-game-body" id="minesweeper-v2">
+      <div class="tetris-layout minesweeper-layout">
+        <div class="tetris-stage minesweeper-stage" id="minesweeper-stage">
+          <canvas width="480" height="480" id="minesweeper-game"></canvas>
+
+          <div class="tetris-overlay minesweeper-overlay" id="minesweeper-overlay">
+            <div class="tetris-card minesweeper-card">
+              <h2 class="tetris-title" id="minesweeper-title">Minesweeper</h2>
+
+              <label class="tetris-label" for="minesweeper-difficulty">Difficulty</label>
+              <select id="minesweeper-difficulty" class="tetris-select">
+                <option value="easy">Easy</option>
+                <option value="normal" selected>Normal</option>
+                <option value="hard">Hard</option>
+              </select>
+
+              <button class="tetris-primary" id="minesweeper-play-btn" type="button">Play Now</button>
+
+              <div class="tetris-gameover" id="minesweeper-gameover" style="display:none;">
+                <p class="tetris-subtext" id="minesweeper-final"></p>
+
+                <label class="tetris-label" for="minesweeper-name">Your name</label>
+                <input id="minesweeper-name" class="tetris-input" type="text" maxlength="16" placeholder="Damon" />
+
+                <button class="tetris-secondary" id="minesweeper-save-score" type="button">Save Score</button>
+                <button class="tetris-primary" id="minesweeper-restart-btn" type="button">Restart</button>
+              </div>
+
+              <details class="tetris-rules minesweeper-rules">
+                <summary>Rules & controls</summary>
+
+                <div class="tetris-rules-body">
+                  <p><strong>Goal:</strong> Reveal every safe tile without hitting a mine. Numbers show how many mines touch that tile.</p>
+                  <ul>
+                    <li><strong>Reveal:</strong> Left click / tap</li>
+                    <li><strong>Flag:</strong> Right click / long press</li>
+                    <li><strong>Mobile:</strong> Use Flag Mode, then tap a tile to place or remove a flag</li>
+                    <li><strong>Win:</strong> Clear all safe tiles</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <div class="tetris-controls minesweeper-controls" id="minesweeper-controls" aria-label="Minesweeper controls">
+          <button type="button" class="tetris-btn minesweeper-btn" id="minesweeper-flag-btn">Flag Mode: Off</button>
+          <button type="button" class="tetris-btn minesweeper-btn" id="minesweeper-new-btn">New Game</button>
+        </div>
+
+        <aside class="tetris-panel minesweeper-panel">
+          <div class="tetris-stats minesweeper-stats">
+            <div class="tetris-stat">
+              <span>Score</span>
+              <strong id="minesweeper-score">0</strong>
+            </div>
+
+            <div class="tetris-stat">
+              <span>Time</span>
+              <strong id="minesweeper-time">0</strong>
+            </div>
+
+            <div class="tetris-stat">
+              <span>Mines</span>
+              <strong id="minesweeper-mines">18</strong>
+            </div>
+          </div>
+
+          <div class="pacman-mini-panel minesweeper-mini-panel">
+            <h3>How it plays</h3>
+            <p>Classic tile-clearing: reveal safe spaces, read the numbers, flag the mines, and push for the fastest global score.</p>
+          </div>
+
+          <div class="tetris-highscores minesweeper-highscores">
+            <h3>Top Scores</h3>
+            <ol id="minesweeper-highscore-list"></ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </details>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h3>Curry Bible</h3></div>
+    <div>
+      <h3>Pages</h3>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="curry-bible-uk.html">Curry Bible UK</a>
+        <a href="curry-bible-europe.html">Curry Bible Europe</a>
+        <a href="cool-curries.html">Cool Curries</a>
+        <a href="return-visits.html">Return Visits</a>
+        <a href="retro-games.html">Retro Games</a>
+      </div>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:thecurryclub2025@gmail.com">thecurryclub2025@gmail.com</a>
+      <h3 class="socials-title">Socials</h3>
+      <a href="https://www.instagram.com/curryclubgram" target="_blank" rel="noopener noreferrer">Instagram: curryclubgram</a>
+    </div>
+    <div>
+      <h3>Whats The Point Of This</h3>
+      <p>Our goal is simple: help people find genuinely great curry. Not the average, forgettable stuff — the places worth travelling for. We’re here to set a clear standard of what a good curry house should be, based on real experiences from a team with completely different tastes.</p>
+    </div>
+  </div>
+  <p class="footer-copyright">&copy; 2026 Curry Bible. All rights reserved.</p>
+</footer>
+<script src="assets/js/static-config.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/tetris.js"></script>
+<script src="assets/js/pacman.js"></script>
+<script src="assets/js/minesweeper.js"></script>
+</body>
+</html>

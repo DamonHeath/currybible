@@ -1,8 +1,2564 @@
-
-:root{
-  --bg:#f5e6d3;--surface:#fff8ef;--surface2:#fff1dc;--text:#2b1a12;--muted:#6f594b;--primary:#6b3e26;--primary2:#8b512f;--secondary:#d9a066;--accent:#b91c1c;--line:rgba(43,26,18,.16);--shadow:0 20px 45px rgba(43,26,18,.14);--max:1260px;--radius:22px;
+:root {
+  --bg: #f5e6d3;
+  --surface: #fff8ef;
+  --text: #2b1a12;
+  --muted: #6f594b;
+  --primary: #6b3e26;
+  --secondary: #d9a066;
+  --accent: #ffffff;
+  --dark: #1a1410;
+  --danger: #7c241d;
+  --shadow: 0 20px 50px rgba(43, 26, 18, 0.15);
 }
-body.dark{--bg:#16100c;--surface:#241913;--surface2:#302016;--text:#f9ead7;--muted:#c7ad98;--primary:#d9a066;--primary2:#8b512f;--secondary:#d9a066;--line:rgba(249,234,215,.18);--shadow:0 20px 45px rgba(0,0,0,.35)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}.skip-link{position:absolute;left:-999px}.skip-link:focus{left:12px;top:12px;background:var(--surface);padding:10px;z-index:999}.wrap{max-width:var(--max);margin:0 auto;padding:0 34px}.site-header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}.header-inner{max-width:var(--max);margin:0 auto;min-height:74px;padding:0 34px;display:grid;grid-template-columns:220px 1fr auto;gap:22px;align-items:center}.brand-text{font-size:1.5rem;font-weight:950;color:var(--primary);text-decoration:none;letter-spacing:.02em}.main-nav{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}.main-nav a,.nav-drop-btn{color:var(--muted);text-decoration:none;font-weight:900;font-size:.92rem;background:transparent;border:0;font:inherit;cursor:pointer;padding:8px 0}.main-nav a:hover,.nav-drop-btn:hover,.main-nav a[aria-current="page"]{color:var(--primary)}.nav-dropdown{position:relative}.nav-drop-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:10px;min-width:230px;display:none}.nav-dropdown:hover .nav-drop-menu,.nav-dropdown.open .nav-drop-menu{display:grid}.nav-drop-menu a{padding:10px 12px;border-radius:10px}.nav-drop-menu a:hover{background:var(--surface2)}.header-actions{display:flex;align-items:center;gap:10px}.dark-toggle,.header-cta,.btn{border:0;border-radius:999px;background:var(--primary);color:#fff;text-decoration:none;font-weight:950;padding:12px 18px;box-shadow:0 12px 26px rgba(43,26,18,.18);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}.dark-toggle{background:var(--primary);font-size:.9rem}.header-cta{background:var(--primary2)}.btn.secondary{background:var(--secondary);color:#2b1a12}.btn.outline{background:transparent;color:var(--primary);box-shadow:inset 0 0 0 2px var(--primary)}.menu-toggle{display:none;border:0;border-radius:999px;background:var(--primary);color:#fff;padding:10px 14px;font-weight:950}.hero-photo{position:relative;min-height:670px;background:linear-gradient(120deg,rgba(43,26,18,.90),rgba(43,26,18,.48)),radial-gradient(circle at 75% 35%,rgba(217,160,102,.58),transparent 20%),radial-gradient(circle at 20% 70%,rgba(185,28,28,.35),transparent 24%),linear-gradient(135deg,#4b2412,#9f5b2b 50%,#2b1a12);display:flex;align-items:center;overflow:hidden}.hero-photo:before{content:"";position:absolute;inset:0;background:repeating-radial-gradient(circle at 78% 42%,rgba(255,255,255,.06) 0 6px,transparent 7px 30px);opacity:.55}.hero-content{position:relative;z-index:2}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.82rem;font-weight:950;color:var(--secondary);margin:0 0 14px}.hero h1,.page-hero h1{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(4rem,8.3vw,7.4rem);line-height:.95;margin:0 0 22px;max-width:760px;color:#fff}.simple-hero{background:linear-gradient(135deg,var(--primary),var(--primary2));padding:86px 0;color:#fff}.simple-hero h1{max-width:960px}.lead{font-size:1.22rem;color:var(--muted);max-width:780px}.lead.light{color:#fff;max-width:620px}.button-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}.section{padding:72px 0}.section-title{margin-bottom:28px}.section-title h2,.clean-two h2,.big-panel h2,.newsletter-card h2{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(2.1rem,4vw,4rem);line-height:1;margin:0 0 14px}.big-copy{font-size:1.35rem;color:var(--muted);max-width:760px}.clean-two{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}.soft-band{background:rgba(217,160,102,.20);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.quote-card,.big-panel,.simple-list-card,.newsletter-card,.simple-card,.review-card,.product-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px}.quote-card p{font-size:2rem;line-height:1.15;font-weight:950;color:var(--primary);margin:0}.cards{display:grid;gap:24px}.cards.two{grid-template-columns:repeat(2,1fr)}.cards.three{grid-template-columns:repeat(3,1fr)}.cards.four{grid-template-columns:repeat(4,1fr)}.review-card,.product-card,.simple-card{display:flex;flex-direction:column;gap:13px}.image-placeholder,.product-thumb{min-height:170px;border-radius:16px;background:linear-gradient(135deg,rgba(107,62,38,.22),rgba(217,160,102,.45)),repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.28) 10px,rgba(255,255,255,.28) 20px);display:flex;align-items:end;padding:14px;font-weight:950;color:var(--primary)}.badge{align-self:flex-start;background:var(--primary);color:#fff;border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:950}.text-link{font-weight:950;color:var(--primary);text-decoration:none;margin-top:auto}.simple-card.tall{min-height:280px}.simple-card.featured{border-color:var(--secondary);box-shadow:0 20px 50px rgba(217,160,102,.22)}.simple-card.danger{border-color:rgba(185,28,28,.35)}.simple-list-card ul{margin:0;padding-left:20px;display:grid;gap:10px}.newsletter-card{text-align:center}.signup-form{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}.signup-form input,.contact-form input,.contact-form select,.contact-form textarea{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--surface);color:var(--text);font:inherit}.signup-form input{min-width:min(360px,100%)}.leaderboard{display:grid;gap:13px}.rank-row{display:grid;grid-template-columns:48px 1fr 1fr auto;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow)}.rank-row span{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:#fff;font-weight:950}.rank-row em{color:var(--muted);font-style:normal}.rank-row b{font-size:1.8rem;color:var(--accent)}.map-box{min-height:430px;border:3px dashed var(--line);border-radius:var(--radius);display:grid;place-items:center;text-align:center;padding:24px;background:linear-gradient(135deg,rgba(96,125,44,.16),rgba(217,160,102,.25))}.notice{background:var(--surface2);border:1px solid var(--line);border-radius:18px;padding:18px}.contact-form{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;text-align:left}.contact-form label{display:grid;gap:7px;font-weight:900}.contact-form .wide{grid-column:1/-1}.contact-form textarea{min-height:130px}.arcade-list{display:grid;gap:22px}.game-banner{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.game-toggle{width:100%;border:0;background:linear-gradient(135deg,var(--surface),var(--surface2));padding:26px 30px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;text-align:left;color:var(--text);cursor:pointer}.game-toggle small{display:block;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:950}.game-toggle strong{display:block;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(2rem,4vw,4rem);line-height:1;color:var(--text)}.game-toggle em{display:block;font-style:normal;color:var(--muted);font-weight:700}.game-toggle b{font-size:2rem}.game-content{display:none;border-top:1px solid var(--line);padding:26px}.game-banner.open .game-content{display:block}.game-layout{display:grid;grid-template-columns:1fr 300px;gap:22px}.game-stage{background:#111;border-radius:18px;min-height:430px;display:grid;place-items:center;padding:16px;overflow:hidden}.game-stage canvas{max-width:100%;background:#050505;border-radius:12px}.game-panel{display:grid;gap:14px;align-content:start}.scorebox{background:rgba(255,255,255,.45);border:1px solid var(--line);border-radius:16px;padding:16px}.score{font-size:2.4rem;font-weight:950;color:var(--accent)}.control-grid{display:grid;grid-template-columns:repeat(3,54px);gap:8px;justify-content:center}.control-grid button{border:0;border-radius:12px;background:var(--primary);color:#fff;font-size:1.2rem;padding:11px}.mine-grid{display:grid;grid-template-columns:repeat(8,34px);gap:4px}.mine-grid button{height:34px;border:0;border-radius:6px;background:#d9a066;font-weight:950}.mine-grid button.open{background:#fff8ef;color:#2b1a12}.site-footer{background:#21130d;color:#fff;margin-top:40px}.site-footer .wrap{padding-top:44px;padding-bottom:44px}.footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}.site-footer a{display:block;color:#f5e6d3;text-decoration:none;margin:7px 0}.site-footer p{color:#f5e6d3}.copyright{margin-top:16px}
-@media(max-width:1100px){.header-inner{grid-template-columns:1fr auto}.menu-toggle{display:inline-flex}.main-nav{display:none;grid-column:1/-1;justify-content:flex-start}.main-nav.open{display:flex}.header-actions{grid-column:1/-1;justify-content:flex-start}.clean-two,.game-layout,.footer-grid{grid-template-columns:1fr}.cards.four{grid-template-columns:repeat(2,1fr)}.cards.three{grid-template-columns:repeat(2,1fr)}.rank-row{grid-template-columns:48px 1fr auto}.rank-row em{grid-column:2/-1}.hero-photo{min-height:590px}}
-@media(max-width:680px){.wrap,.header-inner{padding-left:18px;padding-right:18px}.cards.two,.cards.three,.cards.four{grid-template-columns:1fr}.hero h1,.page-hero h1{font-size:3.7rem}.hero-photo{min-height:620px}.button-row .btn{width:100%}.contact-form{grid-template-columns:1fr}.game-toggle{padding:22px}.game-content{padding:16px}.mine-grid{grid-template-columns:repeat(8,29px)}.mine-grid button{height:29px}.header-actions{align-items:stretch;flex-direction:column}.dark-toggle,.header-cta{width:100%}.main-nav{gap:10px;align-items:flex-start;flex-direction:column}.nav-drop-menu{position:static;transform:none;box-shadow:none;margin-top:8px}.rank-row{grid-template-columns:38px 1fr}.rank-row b{grid-column:2}.game-stage{min-height:330px}.quote-card p{font-size:1.55rem}}
+
+body.dark-mode {
+  --bg: #16100c;
+  --surface: #241913;
+  --text: #f9ead7;
+  --muted: #c7ad98;
+  --primary: #d9a066;
+  --secondary: #8b512f;
+  --accent: #ffffff;
+  --dark: #0d0907;
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* =====================
+   GLOBAL RESET
+===================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 78px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(245, 230, 211, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.dark-mode .site-header {
+  background: rgba(22, 16, 12, 0.92);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.main-nav a {
+  color: var(--muted);
+}
+
+.main-nav a:hover {
+  color: var(--primary);
+}
+
+.theme-toggle {
+  border: none;
+  background: var(--primary);
+  color: var(--accent);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger-menu span {
+  width: 28px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 999px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 900;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.btn.primary {
+  background: var(--secondary);
+  color: #2b1a12;
+}
+
+.btn.secondary {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+/* =====================
+   GLOBAL SECTIONS
+===================== */
+
+.section {
+  padding: 5rem 6%;
+}
+
+.eyebrow {
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+/* =====================
+   HOMEPAGE HERO
+===================== */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 6%;
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.72), rgba(43, 26, 18, 0.78)),
+    url("https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 620px;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons,
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn-uk,
+.hero-btn-europe {
+  gap: 0.35rem;
+}
+
+/* =====================
+   HOMEPAGE SECTIONS
+===================== */
+
+.journey {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.journey h2,
+.story h2,
+.section-heading h2,
+.games-section h2,
+.cta-section h2,
+.owner-section h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.timeline {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.timeline-item span {
+  width: 18px;
+  height: 18px;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-top: 0.35rem;
+}
+
+.story-card {
+  background: var(--surface);
+  padding: 3rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.story-card p {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.member-awards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.award-card {
+  padding: 2.5rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  min-height: 320px;
+}
+
+.award-card h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.award-card.highlight {
+  background: linear-gradient(135deg, #fff1d8, #d9a066);
+  color: #2b1a12;
+}
+
+.award-card.danger {
+  background: linear-gradient(135deg, #2b1a12, #7c241d);
+  color: white;
+}
+
+.member-name {
+  font-size: 1.35rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.review-card {
+  background: var(--surface);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+}
+
+.review-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.review-card h3 a:hover {
+  color: var(--primary);
+}
+
+.review-card .review-image {
+  display: block;
+}
+
+.review-image {
+  height: 220px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.review-card h3,
+.review-card p {
+  padding: 0 1.4rem;
+}
+
+.review-card h3 {
+  padding-top: 1.3rem;
+  font-size: 1.35rem;
+}
+
+.review-card p {
+  color: var(--muted);
+}
+
+.review-card p:last-child {
+  padding-bottom: 1.5rem;
+}
+
+.rating {
+  font-weight: 900;
+  color: var(--primary) !important;
+  margin: 0.4rem 0;
+}
+
+.games-section {
+  margin: 4rem 6%;
+  padding: 4rem;
+  border-radius: 36px;
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.88), rgba(36, 25, 19, 0.92)),
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.games-section p {
+  max-width: 520px;
+  color: #ead7c2;
+}
+
+.cta-section,
+.owner-section {
+  text-align: center;
+}
+
+.cta-section h2,
+.owner-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+  justify-content: center;
+}
+
+.owner-section p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+/* =====================
+   OUR MISSION PAGE
+===================== */
+
+.mission-hero {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  padding: 6%;
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.78), rgba(43, 26, 18, 0.82)),
+    url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.mission-hero-content {
+  max-width: 860px;
+}
+
+.mission-hero h1 {
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+.mission-hero p {
+  font-size: 1.25rem;
+  max-width: 680px;
+}
+
+.mission-intro-card {
+  background: var(--surface);
+  padding: 3rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.mission-intro-card h2,
+.mission-split h2,
+.review-method h2,
+.process-card h2,
+.europe-note-card h2,
+.mission-final h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.mission-intro-card p,
+.mission-text-stack p,
+.criteria-card p,
+.process-card p,
+.process-step p,
+.europe-note-card p,
+.mission-final p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.mission-intro-card p + p,
+.mission-text-stack p + p,
+.process-card p + p {
+  margin-top: 1rem;
+}
+
+.mission-split {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.mission-split.reverse {
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.mission-split.reverse > div:first-child {
+  order: 2;
+}
+
+.mission-split.reverse > div:last-child {
+  order: 1;
+}
+
+.mission-text-stack {
+  background: var(--surface);
+  padding: 2.5rem;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.criteria-card {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.criteria-card:hover {
+  transform: translateY(-6px);
+}
+
+.criteria-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.criteria-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.process-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.process-card {
+  background: linear-gradient(135deg, #fff1d8, #d9a066);
+  color: #2b1a12;
+  padding: 3rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.process-card .eyebrow {
+  color: #6b3e26;
+}
+
+.process-card p {
+  color: #3d2619;
+}
+
+.process-steps {
+  display: grid;
+  gap: 1rem;
+}
+
+.process-step {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.process-step span {
+  width: 18px;
+  height: 18px;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-top: 0.35rem;
+}
+
+.europe-note {
+  padding-top: 2rem;
+}
+
+.europe-note-card {
+  background:
+    linear-gradient(135deg, rgba(43, 26, 18, 0.92), rgba(107, 62, 38, 0.9)),
+    url("https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem;
+  border-radius: 36px;
+  box-shadow: var(--shadow);
+}
+
+.europe-note-card p {
+  color: #f5e6d3;
+  max-width: 760px;
+}
+
+.mission-final {
+  text-align: center;
+}
+
+.mission-final p {
+  max-width: 720px;
+  margin: 0 auto 1.75rem;
+}
+
+.mission-final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* =====================
+   REVIEW ARCHIVE PAGES
+===================== */
+
+.reviews-archive-hero,
+.cool-curries-hero,
+.return-visits-hero,
+.retro-hero {
+  min-height: 48vh;
+  display: flex;
+  align-items: center;
+  padding: 6%;
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.76), rgba(43, 26, 18, 0.84)),
+    url("https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.europe-archive-hero {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.76), rgba(43, 26, 18, 0.84)),
+    url("https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.cool-curries-hero {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.76), rgba(43, 26, 18, 0.84)),
+    url("https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.retro-hero {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.78), rgba(43, 26, 18, 0.84)),
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews-archive-hero-content,
+.cool-curries-hero-content,
+.return-visits-hero-content,
+.retro-hero-content {
+  max-width: 920px;
+}
+
+.reviews-archive-hero h1,
+.cool-curries-hero h1,
+.return-visits-hero h1,
+.retro-hero h1 {
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+}
+
+.reviews-archive-hero p,
+.cool-curries-hero p,
+.return-visits-hero p,
+.retro-hero p {
+  font-size: 1.2rem;
+  max-width: 720px;
+}
+
+.reviews-page-intro {
+  padding: 3rem 6% 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.reviews-page-intro h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.reviews-page-intro p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.reviews-layout {
+  padding: 2rem 6% 5rem;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.reviews-sidebar {
+  position: sticky;
+  top: 104px;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.sidebar-widget {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar-widget h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-widget p {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.review-search-form,
+.reviews-per-page-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.review-search-form label,
+.reviews-per-page-form label {
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.review-search-form input,
+.reviews-per-page-form select {
+  width: 100%;
+  border: 2px solid rgba(107, 62, 38, 0.18);
+  background: var(--bg);
+  color: var(--text);
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  font: inherit;
+}
+
+.review-search-form input:focus,
+.reviews-per-page-form select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.filter-links {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.filter-links a,
+.sidebar-text-link {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.filter-links a:hover,
+.sidebar-text-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-text-link {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* =====================
+   DYNAMIC REVIEW CARDS
+===================== */
+
+.reviews-main {
+  display: grid;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.archive-review-card {
+  display: grid;
+  grid-template-columns: 420px minmax(0, 1fr);
+  background: var(--surface);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 260px;
+  transition: transform 0.2s ease;
+}
+
+.archive-review-card:hover {
+  transform: translateY(-4px);
+}
+
+.archive-review-media {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #2b1a12;
+}
+
+.archive-review-content {
+  min-width: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--surface);
+}
+
+.archive-review-content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1.04;
+  margin-bottom: 0.85rem;
+}
+
+.archive-review-content h2 a {
+  color: inherit;
+}
+
+.archive-review-content h2 a:hover {
+  color: var(--primary);
+}
+
+.archive-review-content p {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 720px;
+}
+
+.archive-review-content .btn {
+  margin-top: 1.25rem;
+  align-self: flex-start;
+}
+
+.placeholder-review {
+  grid-template-columns: 1fr;
+  min-height: auto;
+  border: 2px dashed rgba(107, 62, 38, 0.25);
+}
+
+.placeholder-review .archive-review-content {
+  min-height: 230px;
+  padding: 2rem;
+}
+
+/* =====================
+   COOL CURRIES / RETURN VISITS CARDS
+===================== */
+
+.cool-curry-card,
+.return-visit-card {
+  background: var(--surface);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  transition: transform 0.2s ease;
+}
+
+.cool-curry-card:hover,
+.return-visit-card:hover {
+  transform: translateY(-4px);
+}
+
+.cool-curry-image,
+.return-visit-image {
+  min-height: 320px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.cool-curry-content,
+.return-visit-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cool-curry-content h2,
+.return-visit-content h2 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.cool-curry-content p,
+.return-visit-content p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 760px;
+}
+
+.cool-curry-content p + p,
+.return-visit-content p + p {
+  margin-top: 0.85rem;
+}
+
+.cool-curry-content .btn,
+.return-visit-content .btn {
+  margin-top: 1.4rem;
+}
+
+.featured-cool-curry .cool-curry-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1517244683847-7456b63c5969?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-return-visit .return-visit-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* =====================
+   RETRO GAMES / TETRIS
+===================== */
+
+.retro-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.retro-intro h2,
+.tetris-page-header h2,
+.leaderboard-note-card h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.retro-intro p,
+.tetris-page-header p,
+.leaderboard-note-card p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.tetris-page-shell {
+  margin: 0 6% 5rem;
+  padding: 2rem;
+  border-radius: 36px;
+  background:
+    radial-gradient(circle at top left, rgba(217, 160, 102, 0.22), transparent 32%),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.tetris-page-header {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+
+.tetris-layout {
+  display: grid;
+  grid-template-columns: auto 320px;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.tetris-stage {
+  position: relative;
+  width: min(320px, 92vw);
+  margin: 0 auto;
+}
+
+#tetris-game {
+  width: 100%;
+  height: auto;
+  max-height: 68vh;
+  display: block;
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+  background: #000;
+  outline: none;
+  touch-action: none;
+  image-rendering: pixelated;
+  box-shadow: var(--shadow);
+}
+
+.tetris-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(43, 26, 18, 0.62);
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.tetris-card {
+  width: min(320px, 92%);
+  background: rgba(22, 16, 12, 0.92);
+  border: 1px solid rgba(245, 230, 211, 0.25);
+  padding: 1.25rem;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.tetris-title {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+.tetris-label {
+  display: block;
+  text-align: left;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin: 0.8rem 0 0.4rem;
+  font-weight: 800;
+}
+
+.tetris-select,
+.tetris-input {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 14px;
+  border: 1px solid rgba(245, 230, 211, 0.25);
+  background: rgba(20, 20, 20, 0.9);
+  color: white;
+  font: inherit;
+}
+
+.tetris-primary,
+.tetris-secondary {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  touch-action: manipulation;
+  font-weight: 900;
+}
+
+.tetris-primary {
+  background: var(--secondary);
+  color: #2b1a12;
+}
+
+.tetris-secondary {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+.tetris-rules {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.tetris-rules summary {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.tetris-rules-body {
+  font-size: 0.9rem;
+  opacity: 0.92;
+  margin-top: 0.75rem;
+}
+
+.tetris-rules-body ul {
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+.tetris-panel {
+  width: 320px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid rgba(107, 62, 38, 0.18);
+  border-radius: 24px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.tetris-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.tetris-stat {
+  background: var(--surface);
+  padding: 0.85rem;
+  border-radius: 16px;
+}
+
+.tetris-stat span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.tetris-stat strong {
+  font-size: 1.4rem;
+}
+
+.tetris-previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tetris-preview span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+#tetris-next,
+#tetris-hold {
+  width: 100%;
+  height: auto;
+  background: white;
+  border: 1px solid rgba(107, 62, 38, 0.18);
+  border-radius: 16px;
+}
+
+.tetris-highscores {
+  margin-top: 1.5rem;
+}
+
+.tetris-highscores h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.25rem;
+}
+
+.tetris-highscores ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.tetris-highscores li {
+  margin: 0.4rem 0;
+}
+
+.tetris-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  width: min(620px, 96vw);
+  margin: 1.5rem auto 0;
+}
+
+.tetris-btn {
+  font-size: 0.95rem;
+  padding: 0.85rem 1rem;
+  border: none;
+  background: var(--primary);
+  color: var(--accent);
+  cursor: pointer;
+  border-radius: 999px;
+  min-width: 90px;
+  font-weight: 900;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+body.tetris-no-scroll {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.leaderboard-note-card {
+  background: var(--surface);
+  padding: 3rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* =====================
+   SINGLE REVIEW POSTS
+===================== */
+
+.single-review-page {
+  background: var(--bg);
+}
+
+.single-review-hero {
+  min-height: 58vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 7rem 6% 5rem;
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.68), rgba(43, 26, 18, 0.82)),
+    url("https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.single-review-hero-content {
+  max-width: 1100px;
+}
+
+.single-review-hero .eyebrow {
+  color: var(--secondary);
+}
+
+.single-review-hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+  max-width: 1050px;
+}
+
+.single-review-date {
+  font-size: 1.05rem;
+  color: #f5e6d3;
+  font-weight: 700;
+}
+
+.single-review-shell {
+  padding: 2.5rem 6% 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.single-review-article {
+  background: var(--surface);
+  border-radius: 36px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-width: 0;
+}
+
+.single-review-body {
+  padding: 3.5rem;
+  min-width: 0;
+}
+
+.single-review-body > *:first-child {
+  margin-top: 0;
+}
+
+.single-review-body > * + * {
+  margin-top: 1.35rem;
+}
+
+.single-review-body p,
+.single-review-body li {
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.85;
+}
+
+.single-review-body p {
+  max-width: 980px;
+}
+
+.single-review-body h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.single-review-body h3 {
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.1;
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.single-review-body h4 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+
+.single-review-body strong {
+  color: var(--text);
+  font-weight: 900;
+}
+
+.single-review-body a {
+  color: var(--primary);
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.single-review-body ul,
+.single-review-body ol {
+  padding-left: 1.5rem;
+}
+
+.single-review-body blockquote {
+  border-left: 5px solid var(--secondary);
+  padding: 1rem 1.5rem;
+  background: rgba(217, 160, 102, 0.12);
+  border-radius: 0 18px 18px 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/*
+  REVIEW IMAGE CONTAINER FIX:
+  WordPress can output review photos in several ways:
+  - directly inside .single-review-body
+  - inside a paragraph
+  - inside a figure
+  - inside .wp-block-image
+  - with wp-image / size-large / aligncenter classes
+
+  So the fix must control BOTH the parent wrapper and the image itself.
+  This stops desktop images becoming enormous while keeping mobile images full width.
+*/
+.single-review-page .single-review-body figure:not(:has(img.emoji)):not(:has(img.wp-smiley)):not(:has(img.twemoji)),
+.single-review-page .single-review-body .wp-block-image:not(:has(img.emoji)):not(:has(img.wp-smiley)):not(:has(img.twemoji)),
+.single-review-page .single-review-body p:has(> img:not(.emoji):not(.wp-smiley):not(.twemoji)) {
+  display: block !important;
+  width: min(100%, 560px) !important;
+  max-width: 560px !important;
+  margin: 2rem auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+}
+
+.single-review-page .single-review-article img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body .wp-block-image img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body figure img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body p > img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img.size-full:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img.size-large:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img.size-medium:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img.size-thumbnail:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img[class*="wp-image-"]:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body img[class*="align"]:not(.emoji):not(.wp-smiley):not(.twemoji) {
+  display: block !important;
+  width: 100% !important;
+  max-width: 560px !important;
+  height: auto !important;
+  max-height: 380px !important;
+  object-fit: cover !important;
+  margin: 2rem auto !important;
+  border-radius: 24px !important;
+  box-shadow: 0 16px 38px rgba(43, 26, 18, 0.16) !important;
+}
+
+.single-review-page .single-review-body figure:not(:has(img.emoji)):not(:has(img.wp-smiley)):not(:has(img.twemoji)) img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body .wp-block-image:not(:has(img.emoji)):not(:has(img.wp-smiley)):not(:has(img.twemoji)) img:not(.emoji):not(.wp-smiley):not(.twemoji),
+.single-review-page .single-review-body p:has(> img:not(.emoji):not(.wp-smiley):not(.twemoji)) > img:not(.emoji):not(.wp-smiley):not(.twemoji) {
+  margin: 0 auto !important;
+}
+
+.single-review-body figcaption {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.single-review-sidebar {
+  display: grid;
+  gap: 1rem;
+  position: sticky;
+  top: 92px;
+  align-self: start;
+  min-width: 0;
+}
+
+.single-review-sidebar .sidebar-widget {
+  overflow: hidden;
+  padding: 1.35rem;
+  border-radius: 22px;
+}
+
+.single-review-sidebar .sidebar-widget h3 {
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.single-review-sidebar .sidebar-widget p,
+.single-review-sidebar .sidebar-widget a {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.single-review-sidebar .btn,
+.single-review-sidebar .sidebar-widget .btn,
+.sidebar-widget .btn {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  padding: 0.85rem 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  white-space: normal;
+}
+
+/* =====================
+   EMOJI / WORDPRESS SMILEY FIX
+===================== */
+
+/*
+  FINAL EMOJI OVERRIDE:
+  This must stay below the normal image rules.
+  It forces WordPress/Twemoji emoji images back to text-size.
+*/
+img.emoji,
+img.wp-smiley,
+img.twemoji,
+.single-review-page img.emoji,
+.single-review-page img.wp-smiley,
+.single-review-page img.twemoji,
+.single-review-body img.emoji,
+.single-review-body img.wp-smiley,
+.single-review-body img.twemoji,
+.single-review-body p img.emoji,
+.single-review-body p img.wp-smiley,
+.single-review-body p img.twemoji,
+.single-review-body li img.emoji,
+.single-review-body li img.wp-smiley,
+.single-review-body li img.twemoji,
+.single-review-body h1 img.emoji,
+.single-review-body h2 img.emoji,
+.single-review-body h3 img.emoji,
+.single-review-body h4 img.emoji,
+.single-review-body h5 img.emoji,
+.single-review-body h6 img.emoji {
+  display: inline-block !important;
+  width: 1em !important;
+  min-width: 1em !important;
+  max-width: 1em !important;
+  height: 1em !important;
+  min-height: 1em !important;
+  max-height: 1em !important;
+  margin: 0 0.25em 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
+  vertical-align: -0.12em !important;
+}
+
+.single-review-body figure:has(img.emoji),
+.single-review-body figure:has(img.wp-smiley),
+.single-review-body figure:has(img.twemoji),
+.single-review-body .wp-block-image:has(img.emoji),
+.single-review-body .wp-block-image:has(img.wp-smiley),
+.single-review-body .wp-block-image:has(img.twemoji),
+.single-review-body p:has(> img.emoji),
+.single-review-body p:has(> img.wp-smiley),
+.single-review-body p:has(> img.twemoji) {
+  display: inline !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: inherit !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+
+.emoji,
+.wp-smiley,
+.twemoji,
+.award-emoji,
+.awards-emoji,
+.trophy-emoji {
+  font-size: 1em !important;
+  line-height: 1 !important;
+  vertical-align: -0.12em !important;
+}
+
+.award-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.award-icon {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1;
+  vertical-align: -0.12em;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.site-footer {
+  padding: 3rem 6%;
+  background: var(--primary);
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.4fr;
+  gap: 2rem;
+}
+
+.site-footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.site-footer p,
+.site-footer a {
+  color: #f5e6d3;
+}
+
+.footer-links {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.footer-links a:hover,
+.site-footer a:hover {
+  color: white;
+}
+
+.footer-copyright {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(245, 230, 211, 0.25);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.socials-title {
+  margin-top: 1.5rem;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (min-width: 900px) {
+  .tetris-controls {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .criteria-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .archive-review-card {
+    grid-template-columns: 380px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    width: 75%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    background: var(--surface);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 24px;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav a {
+    width: 100%;
+    padding: 0.45rem 0;
+  }
+
+  .journey,
+  .member-awards,
+  .review-grid,
+  .games-section,
+  .footer-grid,
+  .mission-split,
+  .mission-split.reverse,
+  .process-section,
+  .reviews-page-intro,
+  .reviews-layout,
+  .retro-intro,
+  .tetris-page-header,
+  .tetris-layout,
+  .single-review-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-split.reverse > div:first-child,
+  .mission-split.reverse > div:last-child {
+    order: initial;
+  }
+
+  .criteria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .games-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reviews-sidebar {
+    position: static;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .single-review-sidebar {
+    position: static;
+  }
+
+  .tetris-panel {
+    width: min(420px, 92vw);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .tetris-controls {
+    position: sticky;
+    bottom: calc(env(safe-area-inset-bottom) + 8px);
+    background: rgba(255, 248, 239, 0.96);
+    padding: 0.75rem 0.75rem calc(env(safe-area-inset-bottom) + 0.75rem);
+    border-top: 1px solid rgba(107, 62, 38, 0.12);
+    border-radius: 20px;
+    z-index: 999;
+    box-shadow: var(--shadow);
+  }
+
+  body.dark-mode .tetris-controls {
+    background: rgba(22, 16, 12, 0.96);
+  }
+}
+
+@media (max-width: 800px) {
+  .archive-review-card,
+  .cool-curry-card,
+  .return-visit-card {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-review-media,
+  .cool-curry-image,
+  .return-visit-image {
+    min-height: 230px;
+  }
+
+  .archive-review-content,
+  .cool-curry-content,
+  .return-visit-content {
+    padding: 1.75rem;
+  }
+
+  .archive-review-content h2 {
+    font-size: 2rem;
+  }
+
+  .archive-review-content .btn,
+  .cool-curry-content .btn,
+  .return-visit-content .btn {
+    width: 100%;
+  }
+
+  .reviews-sidebar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .single-review-body figure,
+  .single-review-body .wp-block-image {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .single-review-body img:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body .wp-block-image img:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body figure img:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body p > img:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body img.size-full:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body img.size-large:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body img.size-medium:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body img.size-thumbnail:not(.emoji):not(.wp-smiley):not(.twemoji),
+  .single-review-body img[class*="wp-image-"]:not(.emoji):not(.wp-smiley):not(.twemoji) {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    height: auto !important;
+    margin: 1.5rem auto !important;
+    border-radius: 20px !important;
+    object-fit: cover !important;
+  }
+
+  img.emoji,
+  img.wp-smiley,
+  img.twemoji,
+  .single-review-body img.emoji,
+  .single-review-body img.wp-smiley,
+  .single-review-body img.twemoji {
+    width: 1em !important;
+    min-width: 1em !important;
+    max-width: 1em !important;
+    height: 1em !important;
+    min-height: 1em !important;
+    max-height: 1em !important;
+    margin: 0 0.25em 0 0 !important;
+    display: inline-block !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    vertical-align: -0.12em !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    height: auto;
+    min-height: 78px;
+    padding: 1rem 5%;
+    gap: 1rem;
+  }
+
+  .theme-toggle {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  .main-nav {
+    top: 88px;
+    width: 75%;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 420px;
+  }
+
+  .hero-btn-uk,
+  .hero-btn-europe {
+    flex-direction: column;
+    gap: 0.15rem;
+    line-height: 1.15;
+  }
+
+  .hero-btn-uk {
+    grid-column: 1;
+  }
+
+  .hero-btn-europe {
+    grid-column: 2;
+  }
+
+  .hero-btn-tetris {
+    grid-column: 1 / -1;
+    justify-self: center;
+    min-width: 180px;
+    min-height: 58px;
+  }
+
+  .hero-buttons .btn {
+    min-height: 72px;
+  }
+
+  .section {
+    padding: 1.75rem 5%;
+  }
+
+  .story-card,
+  .award-card,
+  .games-section,
+  .mission-intro-card,
+  .mission-text-stack,
+  .process-card,
+  .europe-note-card,
+  .leaderboard-note-card {
+    padding: 2rem;
+    border-radius: 24px;
+  }
+
+  .games-section {
+    margin: 1.75rem 5%;
+  }
+
+  .mission-hero {
+    min-height: 68vh;
+    padding: 5%;
+  }
+
+  .mission-hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4.7rem);
+  }
+
+  .mission-hero p {
+    font-size: 1.1rem;
+  }
+
+  .reviews-archive-hero,
+  .cool-curries-hero,
+  .return-visits-hero,
+  .retro-hero {
+    min-height: 42vh;
+    padding: 5%;
+  }
+
+  .reviews-archive-hero h1,
+  .cool-curries-hero h1,
+  .return-visits-hero h1,
+  .retro-hero h1 {
+    font-size: clamp(2.7rem, 13vw, 4.5rem);
+  }
+
+  .reviews-archive-hero p,
+  .cool-curries-hero p,
+  .return-visits-hero p,
+  .retro-hero p {
+    font-size: 1.05rem;
+  }
+
+  .reviews-page-intro {
+    padding: 2rem 5% 1rem;
+    gap: 1.25rem;
+  }
+
+  .reviews-layout {
+    padding: 1rem 5% 3.5rem;
+    gap: 1.5rem;
+  }
+
+  .sidebar-widget {
+    padding: 1.35rem;
+    border-radius: 22px;
+  }
+
+  .archive-review-card,
+  .cool-curry-card,
+  .return-visit-card {
+    border-radius: 26px;
+  }
+
+  .chronicles {
+    overflow: hidden;
+  }
+
+  .review-grid,
+  .criteria-grid {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .review-grid::-webkit-scrollbar,
+  .criteria-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-card,
+  .criteria-card {
+    flex: 0 0 86%;
+    scroll-snap-align: start;
+  }
+
+  .mission-final-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mission-final-buttons .btn {
+    width: 100%;
+  }
+
+  .tetris-page-shell {
+    margin: 0 5% 3.5rem;
+    padding: 1.25rem;
+    border-radius: 26px;
+  }
+
+  .tetris-stage {
+    width: min(300px, 92vw);
+  }
+
+  #tetris-game {
+    max-height: 62vh;
+  }
+
+  #tetris-next,
+  #tetris-hold {
+    max-width: 110px;
+  }
+
+  .tetris-stats {
+    gap: 0.6rem;
+  }
+
+  .tetris-stat {
+    padding: 0.7rem;
+  }
+
+  .tetris-btn {
+    min-width: 88px;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .single-review-hero {
+    min-height: 52vh;
+    padding: 5rem 5% 3rem;
+  }
+
+  .single-review-hero h1 {
+    font-size: clamp(2.4rem, 12vw, 4.2rem);
+  }
+
+  .single-review-shell {
+    padding: 2rem 5% 3rem;
+  }
+
+  .single-review-body {
+    padding: 1.5rem;
+  }
+
+  .single-review-article {
+    border-radius: 26px;
+  }
+
+  .single-review-body p,
+  .single-review-body li {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}
+
+/* =====================
+   PAC-MAN GAME CARD
+===================== */
+
+.pacman-page-shell {
+  margin-top: 0;
+}
+
+.pacman-layout {
+  grid-template-columns: minmax(0, 448px) minmax(280px, 320px);
+  gap: clamp(2rem, 4vw, 4rem);
+  justify-content: center;
+  align-items: start;
+}
+
+.pacman-stage {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 448px;
+  justify-self: end;
+  overflow: hidden;
+}
+
+#pacman-game {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  max-height: 72vh;
+  display: block;
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+  background: #050505;
+  outline: none;
+  touch-action: none;
+  image-rendering: pixelated;
+  box-shadow: var(--shadow);
+}
+
+.pacman-overlay {
+  border-radius: 20px;
+}
+
+.pacman-card {
+  width: min(340px, 92%);
+}
+
+.pacman-panel {
+  position: relative;
+  z-index: 2;
+  min-height: 496px;
+  justify-self: start;
+}
+
+.pacman-mini-panel {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid rgba(107, 62, 38, 0.14);
+  border-radius: 18px;
+}
+
+.pacman-mini-panel h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.pacman-mini-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.pacman-controls {
+  width: min(460px, 96vw);
+}
+
+.pacman-btn {
+  min-width: 92px;
+}
+
+@media (max-width: 1000px) {
+  .pacman-panel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .pacman-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    justify-items: center;
+  }
+
+  .pacman-stage {
+    width: min(280px, 82vw);
+    max-width: 280px;
+    justify-self: center;
+  }
+
+  #pacman-game {
+    max-height: none;
+  }
+
+  .pacman-card {
+    width: min(250px, 88%);
+    padding: 1rem;
+  }
+
+  .pacman-card .tetris-title {
+    font-size: 1.65rem;
+  }
+
+  .pacman-panel {
+    width: min(360px, 92vw);
+    justify-self: center;
+  }
+
+  .pacman-controls {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: min(340px, 92vw);
+    justify-items: center;
+  }
+
+  .pacman-controls .pacman-btn:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .pacman-controls .pacman-btn:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .pacman-controls .pacman-btn:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .pacman-controls .pacman-btn:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .pacman-stage {
+    width: min(260px, 80vw);
+    max-width: 260px;
+  }
+
+  .pacman-card {
+    width: min(230px, 86%);
+    padding: 0.9rem;
+  }
+
+  .pacman-controls {
+    width: min(320px, 92vw);
+    gap: 0.7rem;
+  }
+
+  .pacman-btn {
+    min-width: 84px;
+  }
+}
+
+/* Pac-Man mobile score-card overflow fix */
+.pacman-page-shell,
+.pacman-v2,
+.pacman-layout,
+.pacman-panel {
+  overflow: visible;
+}
+
+@media (max-width: 900px) {
+  .pacman-controls {
+    position: static !important;
+    bottom: auto !important;
+    grid-column: 1 / -1;
+    margin: 0.75rem auto 1.25rem;
+    z-index: 2;
+  }
+
+  .pacman-panel {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .pacman-page-shell {
+    overflow: visible;
+    padding-bottom: 2rem;
+  }
+
+  .pacman-panel {
+    width: min(420px, 94vw);
+    margin-top: 0;
+  }
+
+  .pacman-highscores ol {
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* Pac-Man game-over popup overflow fix
+   The Pac-Man game-over/save-score card is taller than the small mobile canvas.
+   Let it escape the canvas frame instead of being clipped inside the maze. */
+.pacman-stage,
+.pacman-overlay {
+  overflow: visible !important;
+}
+
+@media (max-width: 800px) {
+  .pacman-stage {
+    z-index: 4;
+  }
+
+  .pacman-overlay {
+    align-items: flex-start;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .pacman-card {
+    max-height: none;
+  }
+}
+
+/* =====================
+   MINESWEEPER GAME CARD
+===================== */
+
+.minesweeper-page-shell {
+  margin-top: 0;
+}
+
+.minesweeper-layout {
+  grid-template-columns: minmax(0, 480px) minmax(280px, 320px);
+  gap: clamp(2rem, 4vw, 4rem);
+  justify-content: center;
+  align-items: start;
+}
+
+.minesweeper-stage {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  justify-self: end;
+  overflow: visible;
+}
+
+#minesweeper-game {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  max-height: 72vh;
+  display: block;
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+  background: #1a1410;
+  outline: none;
+  touch-action: none;
+  image-rendering: pixelated;
+  box-shadow: var(--shadow);
+}
+
+.minesweeper-overlay {
+  border-radius: 20px;
+  overflow: visible !important;
+}
+
+.minesweeper-card {
+  width: min(340px, 92%);
+}
+
+.minesweeper-panel {
+  position: relative;
+  z-index: 2;
+  min-height: 480px;
+  justify-self: start;
+}
+
+.minesweeper-controls {
+  width: min(460px, 96vw);
+}
+
+.minesweeper-btn {
+  min-width: 130px;
+}
+
+.minesweeper-btn.is-active {
+  background: var(--secondary);
+  color: #2b1a12;
+}
+
+.minesweeper-page-shell,
+.minesweeper-v2,
+.minesweeper-layout,
+.minesweeper-panel {
+  overflow: visible;
+}
+
+@media (max-width: 1000px) {
+  .minesweeper-panel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .minesweeper-controls {
+    position: static !important;
+    bottom: auto !important;
+    grid-column: 1 / -1;
+    margin: 0.75rem auto 1.25rem;
+    z-index: 2;
+  }
+
+  .minesweeper-panel {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .minesweeper-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    justify-items: center;
+  }
+
+  .minesweeper-stage {
+    width: min(300px, 84vw);
+    max-width: 300px;
+    justify-self: center;
+    z-index: 4;
+  }
+
+  #minesweeper-game {
+    max-height: none;
+  }
+
+  .minesweeper-overlay {
+    align-items: flex-start;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .minesweeper-card {
+    width: min(250px, 88%);
+    max-height: none;
+    padding: 1rem;
+  }
+
+  .minesweeper-card .tetris-title {
+    font-size: 1.55rem;
+  }
+
+  .minesweeper-panel {
+    width: min(420px, 94vw);
+    justify-self: center;
+    margin-top: 0;
+  }
+
+  .minesweeper-controls {
+    display: flex;
+    flex-wrap: wrap;
+    width: min(340px, 92vw);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .minesweeper-stage {
+    width: min(280px, 82vw);
+    max-width: 280px;
+  }
+
+  .minesweeper-card {
+    width: min(230px, 86%);
+    padding: 0.9rem;
+  }
+
+  .minesweeper-controls {
+    width: min(320px, 92vw);
+    gap: 0.7rem;
+  }
+
+  .minesweeper-btn {
+    min-width: 120px;
+  }
+}
+
+/* =====================
+   RETRO GAME DROPDOWNS + TETRIS MOBILE CONTROL FIX
+===================== */
+
+.arcade-game-disclosure {
+  display: block;
+}
+
+.arcade-game-summary {
+  position: relative;
+  display: block;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 28px;
+  padding: 0.25rem 4rem 0.25rem 0.25rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.arcade-game-summary::-webkit-details-marker {
+  display: none;
+}
+
+.arcade-game-summary::marker {
+  content: "";
+}
+
+.arcade-game-summary:hover {
+  background: rgba(217, 160, 102, 0.12);
+}
+
+.arcade-game-summary:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 6px;
+}
+
+.arcade-game-summary .tetris-page-header {
+  margin-bottom: 0;
+}
+
+.arcade-chevron {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--accent);
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.arcade-game-disclosure[open] .arcade-chevron {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.arcade-game-body {
+  margin-top: 2rem;
+}
+
+.arcade-game-disclosure:not([open]) {
+  padding-bottom: 2rem;
+}
+
+body.dark-mode .arcade-game-summary:hover {
+  background: rgba(217, 160, 102, 0.08);
+}
+
+@media (max-width: 900px) {
+  #tetris-controls {
+    width: min(360px, 100%);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: stretch;
+    gap: 0.65rem;
+  }
+
+  #tetris-controls .tetris-btn {
+    width: 100%;
+    min-width: 0;
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .arcade-game-summary {
+    padding: 0 3.5rem 0 0;
+    border-radius: 22px;
+  }
+
+  .arcade-game-summary .tetris-page-header {
+    gap: 1rem;
+  }
+
+  .arcade-chevron {
+    right: 0.25rem;
+    width: 2.35rem;
+    height: 2.35rem;
+    font-size: 1.35rem;
+  }
+
+  .arcade-game-body {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #tetris-controls {
+    width: 100%;
+    gap: 0.55rem;
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+  }
+
+  #tetris-controls .tetris-btn {
+    font-size: 0.82rem;
+  }
+}

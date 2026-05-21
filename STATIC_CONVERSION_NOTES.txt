@@ -1,0 +1,6 @@
+This is the static GitHub Pages conversion.
+
+The visual styling is copied from the Curry Bible WordPress theme.
+
+Limitation:
+The uploaded WordPress files did not include the live WordPress database, which is where full posts/pages/categories/custom fields are stored. This package therefore recreates the static structure and uses the available llms.txt post summaries plus uploaded images.

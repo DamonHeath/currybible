@@ -1,72 +1,35 @@
-# Curry Bible Profitable Prototype
+# Curry Bible Static GitHub Conversion
 
-This repository is a **static visual prototype** for the next version of Curry Bible.
+This is a static HTML/CSS/JavaScript conversion of the uploaded Curry Bible WordPress theme/site files for GitHub Pages review.
 
-It is designed to be uploaded to GitHub and viewed through **GitHub Pages** without touching the live WordPress site at `currybible.co.uk`.
+## What this is
 
-## What this prototype is
+- A GitHub-readable static version.
+- Uses the original theme CSS from `wp-content/themes/currybible/assets/css/styles.css`.
+- Uses the original JavaScript files from `wp-content/themes/currybible/assets/js/`.
+- Copies the original uploaded media from `wp-content/uploads/`.
+- Preserves the original header, homepage structure, archive page layouts, mission page and arcade page as closely as possible in static form.
 
-This is a clean HTML/CSS/JavaScript representation of the proposed profitable site structure:
+## Important limitation
 
-- Homepage repositioned around reviews, rankings, owner enquiries, and audience capture
-- New **For Curry Houses** commercial page
-- New **Rankings** page
-- New **Curry Map** / directory foundation
-- New **Approved Gear** affiliate page
-- Updated **Arcade** positioning
-- Improved review/archive card direction
-- Trust-first sponsored content policy
+The WordPress upload did not include the live WordPress database export. WordPress posts, page content, categories, custom fields and featured image relationships normally live in the database, not in the theme files.
 
-## File structure
+This conversion uses the available `llms.txt` post listing and the media folder to build static review/archive pages. For a 100% content-perfect static export, export the live site with a static export plugin or provide a database export.
 
-```text
-curry-bible-profit-prototype/
-├── index.html
-├── reviews.html
-├── rankings.html
-├── curry-map.html
-├── arcade.html
-├── for-curry-houses.html
-├── approved.html
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
-│       ├── logo.svg
-│       ├── favicon.svg
-│       ├── hero-curry.jpg
-│       ├── review-ranas.jpg
-│       ├── review-curry-leaf.jpg
-│       ├── review-shapla.jpg
-│       ├── review-nur.jpg
-│       └── approved-gear.jpg
-├── docs/
-│   ├── content-policy.md
-│   ├── integration-plan.md
-│   └── wireframe-notes.md
-├── .gitignore
-└── README.md
+## GitHub Pages
+
+Upload this folder to a GitHub repo, then enable:
+
+Settings → Pages → Deploy from branch → main → /root
+
+## Local preview
+
+Open `index.html` directly or run:
+
+```bash
+python -m http.server 8000
 ```
 
-## How to view locally
+Then visit:
 
-Open `https://damonheath.github.io/currybible/` in your browser.
-
-No build step is needed.
-
-## Core commercial idea
-
-Curry Bible should become:
-
-> A brutally honest curry review brand with rankings, a local curry directory, reader community, and paid visibility opportunities for curry houses — without ever selling review scores.
-
-## Strong rule
-
-Paid visibility is fine.
-
-Paid praise is poison.
-
-Review scores must remain independent. If that trust goes, the whole brand loses its value.
-
+http://localhost:8000

@@ -1,76 +1,246 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Mission | Curry Bible</title>
-  <meta name="description" content="The Curry Bible mission page preserved from the live site structure.">
-  <link rel="icon" href="assets/images/favicon.svg">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="header-inner">
-    <a class="brand-text" href="index.html">Curry Bible</a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
-    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
-      <div class="nav-dropdown">
-        <button class="nav-drop-btn" type="button" aria-expanded="false">Reviews</button>
-        <div class="nav-drop-menu">
-          <a href="reviews.html">Latest Reviews</a>
-          <a href="reviews.html#rank-order">View by Rank Order</a>
-          <a href="reviews.html#uk-reviews">Curry Bible UK</a>
-          <a href="reviews.html#europe-reviews">Curry Bible Europe</a>
-          <a href="for-curry-houses.html">Own this restaurant?</a>
-        </div>
-      </div>
-      <a href="curry-map.html" data-nav="map">Curry Map</a>
-      <a href="arcade.html" data-nav="arcade">Arcade</a>
-      <a href="for-curry-houses.html" data-nav="houses">For Curry Houses</a>
-      <a href="approved.html" data-nav="approved">Approved Gear</a>
-    </nav>
-    <div class="header-actions">
-      <button class="dark-toggle" type="button" aria-pressed="false">Dark Mode</button>
-      <a class="header-cta" href="for-curry-houses.html">Get Featured</a>
-    </div>
+  <div class="header-left">
+    <button id="burgerMenu" class="burger-menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">Curry Bible</a>
   </div>
+  <nav id="mainNav" class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="our-mission.html">Our Mission</a>
+    <a href="curry-bible-uk.html">Curry Bible UK</a>
+    <a href="curry-bible-europe.html">Curry Bible Europe</a>
+    <a href="cool-curries.html">Cool Curries</a>
+    <a href="return-visits.html">Return Visits</a>
+    <a href="retro-games.html">Retro Games</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle">Dark Mode</button>
 </header>
-<main id="main">
-<section class="page-hero simple-hero"><div class="wrap"><p class="eyebrow">Our Mission</p><h1>Review curry houses properly.</h1><p class="lead">No lazy ratings. No fake praise. No pretending a poor night was good because everyone wants to be polite.</p></div></section><section class="section"><div class="wrap big-panel"><p class="big-copy">The mission is simple: give curry houses the score they actually earn, while keeping the Curry Bible voice intact.</p><p>Full live mission content can be carried over during WordPress integration.</p></div></section>
+<main>
+  <section class="mission-hero">
+    <div class="mission-hero-content">
+      <p class="eyebrow">Our Mission</p>
+      <h1>Finding Britain’s best curry houses, one proper review at a time.</h1>
+      <p>
+        Curry brings people together. For us, it brings together a group of very different tastes,
+        different standards, and different opinions — which is exactly why the reviews work.
+      </p>
+    </div>
+  </section>
+
+  <section class="section mission-intro">
+    <div class="mission-intro-card">
+      <p class="eyebrow">Why We Exist</p>
+      <h2>We are not here to hand out easy praise.</h2>
+      <p>
+        Curry Bible was built around one simple idea: finding genuinely great curry houses and separating
+        them from the average, forgettable, and overhyped ones.
+      </p>
+
+      <p>
+        Some of us chase heat, some look for balance, some care about rich creamy comfort dishes, and some
+        judge a place by the full experience from the first drink to the final bill. That mix of opinions
+        means every review has range — not just one person deciding what is good.
+      </p>
+    </div>
+  </section>
+
+  <section class="section mission-split">
+    <div>
+      <p class="eyebrow">The Standard</p>
+      <h2>Every curry house gets judged properly.</h2>
+    </div>
+
+    <div class="mission-text-stack">
+      <p>
+        A good curry review should cover more than whether one dish was spicy enough. We look at the full
+        night: the menu, the service, the flavour, the drinks, the value, and whether the place actually
+        deserves your money.
+      </p>
+
+      <p>
+        That is the point of Curry Bible. We want people to know where to go, what to expect, and which
+        places are worth travelling for.
+      </p>
+    </div>
+  </section>
+
+  <section class="section review-method">
+    <div class="section-heading">
+      <p class="eyebrow">How We Review</p>
+      <h2>The five things that matter.</h2>
+    </div>
+
+    <div class="criteria-grid">
+      <article class="criteria-card">
+        <span>01</span>
+        <h3>Menu Choice</h3>
+        <p>
+          We look for variety, proper options, familiar favourites, and whether the menu gives every type
+          of curry lover something worth ordering.
+        </p>
+      </article>
+
+      <article class="criteria-card">
+        <span>02</span>
+        <h3>Service</h3>
+        <p>
+          We judge how the visit feels from the moment we walk in. Friendly, sharp, attentive service
+          matters.
+        </p>
+      </article>
+
+      <article class="criteria-card">
+        <span>03</span>
+        <h3>Taste</h3>
+        <p>
+          This is the heart of it. Flavour, freshness, balance, spice, texture, and whether the food
+          actually delivers.
+        </p>
+      </article>
+
+      <article class="criteria-card">
+        <span>04</span>
+        <h3>Drinks</h3>
+        <p>
+          A proper curry night needs proper drinks. We look at choice, quality, and how well the drinks
+          support the meal.
+        </p>
+      </article>
+
+      <article class="criteria-card">
+        <span>05</span>
+        <h3>Value For Money</h3>
+        <p>
+          Price matters. Portion size matters. Quality matters. We score whether the overall visit felt
+          worth what was paid.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section process-section">
+    <div class="process-card">
+      <p class="eyebrow">Judging Process</p>
+      <h2>No favourites. No bias. Just the average.</h2>
+
+      <p>
+        After each visit, every member gives their own scores across the review categories. Those scores
+        are averaged to create each person’s final rating.
+      </p>
+
+      <p>
+        Then the full group score is averaged together to create one final Curry Bible rating for the
+        restaurant. That way, the result is not based on one loud opinion — it is based on the table.
+      </p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <span></span>
+        <p>Everyone scores the same categories.</p>
+      </div>
+
+      <div class="process-step">
+        <span></span>
+        <p>Each reviewer gets an individual average.</p>
+      </div>
+
+      <div class="process-step">
+        <span></span>
+        <p>The group average becomes the final restaurant rating.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mission-split reverse">
+    <div>
+      <p class="eyebrow">Why It Matters</p>
+      <h2>The UK has serious curry culture. We want to document it properly.</h2>
+    </div>
+
+    <div class="mission-text-stack">
+      <p>
+        Britain is packed with curry houses — some brilliant, some average, and some that should probably
+        have stayed closed. The problem is that most people only discover the truth after spending their
+        own money.
+      </p>
+
+      <p>
+        We want Curry Bible to help fix that. Whether someone wants a local gem, a big night out, a return
+        visit contender, or the best curry house in the country, our reviews should point them in the right
+        direction.
+      </p>
+    </div>
+  </section>
+
+  <section class="section europe-note">
+    <div class="europe-note-card">
+      <p class="eyebrow">Beyond The UK</p>
+      <h2>Curry Bible Europe has its place too.</h2>
+      <p>
+        The UK is the main mission, but every now and then we take the search further. Curry houses across
+        Europe give us something to compare against, something different to judge, and sometimes something
+        genuinely surprising.
+      </p>
+    </div>
+  </section>
+
+  <section class="section mission-final">
+    <h2>Nine reviewers. Different tastes. One mission.</h2>
+    <p>
+      To find the curry houses worth your time, your money, and your next night out.
+    </p>
+
+    <div class="mission-final-buttons">
+      <a href="" class="btn primary">
+        Curry Bible UK
+      </a>
+
+      <a href="" class="btn secondary">
+        Curry Bible Europe
+      </a>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
-  <div class="wrap footer-grid">
+  <div class="footer-grid">
+    <div><h3>Curry Bible</h3></div>
     <div>
-      <h2>Curry Bible</h2>
-      <p><strong>What’s the point of this?</strong><br>Curry Bible exists to review curry houses properly: no fake praise, no lazy ratings, no nonsense. Just honest curry nights, proper scores, jokes, rankings, and the search for the best curry houses around.</p>
+      <h3>Pages</h3>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="curry-bible-uk.html">Curry Bible UK</a>
+        <a href="curry-bible-europe.html">Curry Bible Europe</a>
+        <a href="cool-curries.html">Cool Curries</a>
+        <a href="return-visits.html">Return Visits</a>
+        <a href="retro-games.html">Retro Games</a>
+      </div>
     </div>
     <div>
-      <h3>Explore</h3>
-      <a href="reviews.html">Reviews</a>
-      <a href="reviews.html#rank-order">View by Rank Order</a>
-      <a href="curry-map.html">Curry Map</a>
-      <a href="arcade.html">Arcade</a>
+      <h3>Contact</h3>
+      <a href="mailto:thecurryclub2025@gmail.com">thecurryclub2025@gmail.com</a>
+      <h3 class="socials-title">Socials</h3>
+      <a href="https://www.instagram.com/curryclubgram" target="_blank" rel="noopener noreferrer">Instagram: curryclubgram</a>
     </div>
     <div>
-      <h3>The Original Stuff</h3>
-      <a href="our-story.html">Our Story</a>
-      <a href="our-mission.html">Our Mission</a>
-      <a href="awards.html">Currier & Curry Cunt</a>
-      <a href="policies.html">Policies</a>
-    </div>
-    <div>
-      <h3>Commercial</h3>
-      <a href="for-curry-houses.html">For Curry Houses</a>
-      <a href="approved.html">Approved Gear</a>
-      <a href="policies.html#affiliate">Affiliate Disclosure</a>
-      <a href="policies.html#sponsored">Sponsored Policy</a>
-      <p class="copyright">© <span data-year></span> Curry Bible.</p>
+      <h3>Whats The Point Of This</h3>
+      <p>Our goal is simple: help people find genuinely great curry. Not the average, forgettable stuff — the places worth travelling for. We’re here to set a clear standard of what a good curry house should be, based on real experiences from a team with completely different tastes.</p>
     </div>
   </div>
+  <p class="footer-copyright">&copy; 2026 Curry Bible. All rights reserved.</p>
 </footer>
-<script src="assets/js/main.js"></script>
-
+<script src="assets/js/static-config.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
