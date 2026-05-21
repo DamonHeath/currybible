@@ -1,0 +1,36 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs/cache
+*.log
+.cache/
+.tmp/
+
+# Packages/builds
+node_modules/
+dist/
+build/
+
+# WordPress/backups/security-sensitive
+wp-config.php
+*.sql
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+public_html/
+wp-admin/
+wp-includes/
+wp-content/uploads/
+
+# Environment
+.env
+.env.*
