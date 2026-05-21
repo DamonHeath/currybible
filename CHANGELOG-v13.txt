@@ -1,0 +1,12 @@
+Curry Bible static conversion v13 — reader-ready copy pass
+
+Changed:
+- Removed editor/staging language from visible pages.
+- Reworded Approved Gear so it reads like a real reader-facing page.
+- Replaced "Affiliate Link Coming Soon" buttons with reader-friendly "Browse Curry Picks".
+- Reworked the Approved Gear rule card into a proper Curry Bible reader-facing statement.
+- Reworded Curry Map copy so it no longer mentions static previews, WordPress, plugins, or future setup.
+- Reworded the Reviews rank-order explanation so it reads like a public leaderboard explanation.
+- Removed static-export notes from individual review pages.
+- Reworded Privacy Policy placeholder text into reader-facing copy.
+- Kept the existing layout, hero, navigation, Arcade, and visual style intact.
