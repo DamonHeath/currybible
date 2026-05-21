@@ -1,0 +1,7 @@
+# CHANGELOG v8 — Featured Button Styling
+
+- Restyled the header “Get Featured” link so it now appears as a proper rounded button.
+- Used a light brown/gold curry-style gradient so it stands out without fighting the Dark Mode button.
+- Added hover lift/shadow styling to match the existing button feel.
+- Added stronger CSS specificity so the link cannot appear as plain text in the header.
+- No page structure, arcade code, review content, or navigation wording was changed.
