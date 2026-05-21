@@ -1,65 +1,72 @@
-# Curry Bible Profitable Prototype v2
+# Curry Bible Profitable Prototype
 
-A static GitHub Pages-ready mockup for the next Curry Bible layout.
+This repository is a **static visual prototype** for the next version of Curry Bible.
 
-This repo is deliberately separate from the live WordPress site. It is for visual review before integrating anything into `wp-content/themes/currybible/`.
+It is designed to be uploaded to GitHub and viewed through **GitHub Pages** without touching the live WordPress site at `currybible.co.uk`.
 
-## What changed in v2
+## What this prototype is
 
-- Header now uses a Curry Bible logo asset, not just a text title.
-- Every visible mention of Curry Club has been refactored to Curry Bible.
-- Original site personality is preserved through Our Story, Our Mission, Currier of the Month and Curry Cunt pages.
-- The homepage is fuller and less bland.
-- Affiliate/approved section now includes realistic example product cards.
-- Curry Map remains a simple placeholder ready for a future Google Maps plugin.
-- Arcade games are presented as dropdown banner sections.
-- The commercial route for restaurant owners is clearer and stronger.
+This is a clean HTML/CSS/JavaScript representation of the proposed profitable site structure:
 
-## Pages
+- Homepage repositioned around reviews, rankings, owner enquiries, and audience capture
+- New **For Curry Houses** commercial page
+- New **Rankings** page
+- New **Curry Map** / directory foundation
+- New **Approved Gear** affiliate page
+- Updated **Arcade** positioning
+- Improved review/archive card direction
+- Trust-first sponsored content policy
 
-- `index.html` — homepage
-- `reviews.html` — review/archive structure
-- `rankings.html` — leaderboard mockup
-- `curry-map.html` — simple map/directory placeholder
-- `arcade.html` — dropdown banner arcade games
-- `for-curry-houses.html` — commercial lead page
-- `approved.html` — affiliate/product examples
-- `our-story.html` — respectful original-page placeholder
-- `our-mission.html` — respectful original-page placeholder
-- `awards.html` — Currier of the Month / Curry Cunt page
-- `policies.html` — affiliate, sponsored and privacy placeholders
+## File structure
 
-## GitHub Pages
-
-1. Create a new GitHub repo.
-2. Upload these files.
-3. Go to **Settings → Pages**.
-4. Choose **Deploy from branch**.
-5. Select `main` and `/root`.
-
-## WordPress integration plan
-
-Do not paste this over the live theme. Take a clean backup first.
-
-Likely live theme files to update later:
-
-```txt
-wp-content/themes/currybible/header.php
-wp-content/themes/currybible/front-page.php
-wp-content/themes/currybible/single.php
-wp-content/themes/currybible/assets/css/styles.css
-wp-content/themes/currybible/page-retro-games.php
+```text
+curry-bible-profit-prototype/
+├── index.html
+├── reviews.html
+├── rankings.html
+├── curry-map.html
+├── arcade.html
+├── for-curry-houses.html
+├── approved.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       ├── logo.svg
+│       ├── favicon.svg
+│       ├── hero-curry.jpg
+│       ├── review-ranas.jpg
+│       ├── review-curry-leaf.jpg
+│       ├── review-shapla.jpg
+│       ├── review-nur.jpg
+│       └── approved-gear.jpg
+├── docs/
+│   ├── content-policy.md
+│   ├── integration-plan.md
+│   └── wireframe-notes.md
+├── .gitignore
+└── README.md
 ```
 
-Likely new templates later:
+## How to view locally
 
-```txt
-page-for-curry-houses.php
-page-rankings.php
-page-curry-map.php
-page-approved.php
-```
+Open `https://damonheath.github.io/currybible/` in your browser.
 
-## Hard rule
+No build step is needed.
 
-Paid visibility is fine. Paid review scores are not.
+## Core commercial idea
+
+Curry Bible should become:
+
+> A brutally honest curry review brand with rankings, a local curry directory, reader community, and paid visibility opportunities for curry houses — without ever selling review scores.
+
+## Strong rule
+
+Paid visibility is fine.
+
+Paid praise is poison.
+
+Review scores must remain independent. If that trust goes, the whole brand loses its value.
+
