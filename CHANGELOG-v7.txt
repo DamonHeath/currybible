@@ -1,0 +1,12 @@
+Curry Bible Static Conversion v7 - Get Featured Button
+
+Changes made:
+- Added a visible "Get Featured" button to the header across all static HTML pages.
+- The button links to for-curry-houses.html.
+- Kept the Dark Mode button in the header.
+- Kept the simple live-site style; no layout redesigns were made.
+- Added small responsive CSS so the button behaves properly on smaller screens.
+
+No arcade/game code was changed.
+No review content was changed.
+No page structure was removed.

@@ -91,8 +91,8 @@ body.dark-mode .site-header {
 
 .main-nav {
   display: flex;
-  gap: 1.25rem;
-  font-size: 0.92rem;
+  gap: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -102,6 +102,38 @@ body.dark-mode .site-header {
 
 .main-nav a:hover {
   color: var(--primary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.header-featured-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 0.68rem 1rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 900;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(43, 26, 18, 0.12);
+}
+
+.header-featured-btn:hover {
+  transform: translateY(-1px);
+  color: var(--dark);
+  box-shadow: 0 12px 26px rgba(43, 26, 18, 0.18);
+}
+
+body.dark-mode .header-featured-btn {
+  color: #1a1410;
 }
 
 .theme-toggle {
@@ -1820,6 +1852,15 @@ img.twemoji,
   .theme-toggle {
     padding: 0.65rem 0.85rem;
     font-size: 0.8rem;
+  }
+
+  .header-actions {
+    gap: 0.45rem;
+  }
+
+  .header-featured-btn {
+    padding: 0.62rem 0.8rem;
+    font-size: 0.78rem;
   }
 
   .main-nav {
