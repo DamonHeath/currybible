@@ -1,0 +1,6 @@
+# v15 - Approved Gear homepage move
+
+- Moved the Curry Bible Approved / Approved Gear homepage section higher up the page.
+- It now appears before the Arcade banner, giving the homepage better colour separation and bringing affiliate-friendly content closer to the top.
+- Reworded the homepage Approved Gear description so it is reader-facing rather than editor/planning copy.
+- Did not alter the hero, Arcade game code, review pages, Curry Map, or For Curry Houses page.
