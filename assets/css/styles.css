@@ -2757,3 +2757,145 @@ body.dark-mode .arcade-game-summary:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* =====================
+   REVIEW HUB IMAGE CARDS + RANK ORDER V4
+===================== */
+
+.review-hub-card.image-card {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.42), rgba(43, 26, 18, 0.82)),
+    var(--card-bg);
+  background-size: cover;
+  background-position: center;
+  color: var(--accent);
+}
+
+.review-hub-card.image-card::before {
+  background: radial-gradient(circle at top right, rgba(217, 160, 102, 0.28), transparent 46%);
+}
+
+.review-hub-card.image-card p,
+.review-hub-card.image-card .eyebrow {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.review-hub-card.image-card span {
+  color: var(--secondary);
+}
+
+.review-hub-card.owner h2 {
+  max-width: 680px;
+}
+
+.rank-feature {
+  max-width: 1050px;
+  margin-bottom: 2rem;
+}
+
+.rank-feature h2 {
+  font-size: clamp(2.4rem, 5vw, 5.2rem);
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+
+.rank-feature p:not(.eyebrow) {
+  max-width: 830px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.rank-topper {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.7fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.rank-champion {
+  min-height: 380px;
+  border-radius: 34px;
+  padding: 2.2rem;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.35), rgba(43, 26, 18, 0.86)),
+    var(--rank-bg);
+  background-size: cover;
+  background-position: center;
+  color: var(--accent);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.rank-champion h3 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.95;
+  margin-bottom: 0.7rem;
+}
+
+.rank-champion p,
+.rank-champion .eyebrow {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 760px;
+}
+
+.rank-champion .btn {
+  margin-top: 1.1rem;
+}
+
+.rank-note {
+  border-radius: 34px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rank-note h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.rank-note p {
+  color: var(--muted);
+}
+
+.rank-order-list.detailed {
+  margin-top: 1.5rem;
+}
+
+.rank-order-list.detailed .rank-order-card {
+  border: 1px solid rgba(43, 26, 18, 0.08);
+}
+
+.rank-order-list.detailed .rank-order-card:nth-child(-n+3) .rank-number {
+  background: var(--secondary);
+  color: var(--dark);
+}
+
+.rank-order-list.detailed strong {
+  color: var(--primary);
+}
+
+body.dark-mode .review-hub-card.image-card,
+body.dark-mode .rank-champion {
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
+}
+
+body.dark-mode .rank-note,
+body.dark-mode .rank-order-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  .rank-topper {
+    grid-template-columns: 1fr;
+  }
+
+  .rank-champion {
+    min-height: 310px;
+  }
+}
