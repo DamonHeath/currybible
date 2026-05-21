@@ -3605,3 +3605,146 @@ body.dark-mode .browse-card {
     align-items: start;
   }
 }
+
+
+/* =====================
+   APPROVED GEAR / POLICY PAGES
+===================== */
+
+.approved-hero-page {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.72), rgba(43, 26, 18, 0.82)),
+    url("https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.affiliate-notice-section {
+  padding-bottom: 2rem;
+}
+
+.affiliate-notice-card {
+  border: 2px solid rgba(217, 160, 102, 0.45);
+}
+
+.approved-grid,
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.approved-card,
+.policy-card {
+  background: var(--surface);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approved-card:hover,
+.policy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(43, 26, 18, 0.2);
+}
+
+.approved-card-image {
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.approved-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(43, 26, 18, 0.04), rgba(43, 26, 18, 0.25));
+}
+
+.approved-card-content {
+  padding: 2rem;
+}
+
+.approved-card h3,
+.policy-card h2 {
+  font-size: 1.8rem;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.approved-card p,
+.policy-card p {
+  color: var(--muted);
+}
+
+.approved-card .btn {
+  margin-top: 1.4rem;
+}
+
+.spice-card .approved-card-image {
+  background-image: url("https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80");
+}
+
+.karahi-card .approved-card-image {
+  background-image: url("https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80");
+}
+
+.balti-card .approved-card-image {
+  background-image: url("https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=80");
+}
+
+.cookbook-card .approved-card-image {
+  background-image: url("https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=900&q=80");
+}
+
+.storage-card .approved-card-image {
+  background-image: url("https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=900&q=80");
+}
+
+.tiffin-card .approved-card-image {
+  background-image: url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80");
+}
+
+.approved-home-section {
+  background: linear-gradient(135deg, rgba(255, 248, 239, 0.78), rgba(217, 160, 102, 0.25));
+}
+
+.policy-card {
+  display: block;
+  padding: 2.5rem;
+  min-height: 330px;
+}
+
+.dark-policy-card {
+  background: linear-gradient(135deg, #2b1a12, #7c241d);
+  color: white;
+}
+
+.dark-policy-card p {
+  color: #f5e6d3;
+}
+
+body.dark-mode .approved-card,
+body.dark-mode .policy-card:not(.dark-policy-card) {
+  background: var(--surface);
+}
+
+@media (max-width: 1100px) {
+  .approved-grid,
+  .policy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .approved-grid,
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approved-card-image {
+    min-height: 180px;
+  }
+}
