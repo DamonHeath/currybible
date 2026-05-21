@@ -1,0 +1,14 @@
+# v14 — Review-Bottom CTA
+
+Added a subtle commercial call-to-action beneath every static review page.
+
+## Changed
+
+- Added a reusable-looking CTA block below each single review.
+- CTA links to `for-curry-houses.html`.
+- Copy is reader-facing and keeps the Curry Bible tone.
+- Added CSS for `.review-owner-cta-section` and `.review-owner-cta`.
+
+## WordPress integration note
+
+When this is moved into WordPress, this should become a template partial included in `single.php`, so it appears automatically under every review without needing to be written into each post.

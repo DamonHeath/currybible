@@ -3748,3 +3748,64 @@ body.dark-mode .policy-card:not(.dark-policy-card) {
     min-height: 180px;
   }
 }
+
+
+/* =====================
+   REVIEW-BOTTOM OWNER CTA
+===================== */
+
+.review-owner-cta-section {
+  padding-top: 0;
+}
+
+.review-owner-cta {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border-radius: 36px;
+  background:
+    linear-gradient(135deg, rgba(43, 26, 18, 0.92), rgba(124, 36, 29, 0.88)),
+    url("https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.review-owner-cta .eyebrow {
+  color: var(--secondary);
+}
+
+.review-owner-cta h2 {
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  line-height: 1.02;
+  max-width: 900px;
+  margin-bottom: 1rem;
+}
+
+.review-owner-cta p:not(.eyebrow) {
+  color: #f5e6d3;
+  max-width: 780px;
+  font-size: 1.08rem;
+}
+
+.review-owner-cta .btn {
+  min-width: 150px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .review-owner-cta {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .review-owner-cta .btn {
+    width: fit-content;
+  }
+}
