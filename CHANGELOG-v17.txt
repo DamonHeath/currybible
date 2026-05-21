@@ -1,0 +1,15 @@
+Curry Bible static GitHub conversion v17
+
+Homepage section order updated to the approved flow:
+
+1. Hero
+2. We are here to find section
+3. Curry Bible Approved / affiliate gear
+4. Our Journey
+5. Curry Chronicles
+6. Curry Bible Traditions / awards
+7. Think Your Curry House Can Survive Us
+8. Choose Your Next Rabbit Hole
+9. Arcade
+
+No other site sections, styling, games, review content, or page structures were intentionally changed.
