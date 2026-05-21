@@ -33,3 +33,14 @@ python -m http.server 8000
 Then visit:
 
 http://localhost:8000
+
+## Update: Reviews Navigation
+
+The main header now uses a simplified review structure:
+
+- Home
+- Reviews
+- Arcade
+- Dark Mode
+
+The new `reviews.html` page acts as the review hub, linking to Curry Bible UK, Curry Bible Europe, Cool Curries, Return Visits, View by Rank Order, and the restaurant-owner enquiry route.

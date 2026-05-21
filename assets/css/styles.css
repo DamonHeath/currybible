@@ -2562,3 +2562,198 @@ body.dark-mode .arcade-game-summary:hover {
     font-size: 0.82rem;
   }
 }
+
+/* =====================
+   REVIEWS HUB PAGE
+===================== */
+
+.reviews-hub-hero {
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.76), rgba(43, 26, 18, 0.84)),
+    url("https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews-hub-intro {
+  padding: 4rem 6% 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.reviews-hub-intro h2 {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.02;
+}
+
+.reviews-hub-intro p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.reviews-hub-grid {
+  padding: 2rem 6% 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.review-hub-card {
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  border-radius: 32px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-hub-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(217, 160, 102, 0.28), transparent 42%);
+  pointer-events: none;
+}
+
+.review-hub-card.big {
+  grid-column: span 2;
+  min-height: 360px;
+  background:
+    linear-gradient(rgba(43, 26, 18, 0.56), rgba(43, 26, 18, 0.76)),
+    url("wp-content/uploads/2026/05/Beef-Main-1100x450.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.review-hub-card.owner {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+.review-hub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 60px rgba(43, 26, 18, 0.2);
+}
+
+.review-hub-card h2 {
+  position: relative;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.review-hub-card p {
+  position: relative;
+  max-width: 620px;
+  color: var(--muted);
+}
+
+.review-hub-card.big p,
+.review-hub-card.owner p,
+.review-hub-card.big .eyebrow,
+.review-hub-card.owner .eyebrow {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.review-hub-card span {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.3rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.review-hub-card.big span,
+.review-hub-card.owner span {
+  color: var(--secondary);
+}
+
+.rank-order-section .section-heading p:not(.eyebrow) {
+  max-width: 850px;
+  color: var(--muted);
+  margin-top: 0.75rem;
+}
+
+.rank-order-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.rank-order-card {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: 28px;
+  padding: 1.5rem;
+}
+
+.rank-number {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.rank-order-card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.3rem;
+}
+
+.rank-order-card h3 a {
+  color: inherit;
+}
+
+.rank-order-card h3 a:hover {
+  color: var(--primary);
+}
+
+.rank-order-card p {
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .reviews-hub-intro,
+  .reviews-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-hub-card.big {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews-hub-intro,
+  .reviews-hub-grid {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .review-hub-card {
+    min-height: 240px;
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .rank-order-card {
+    grid-template-columns: 1fr;
+  }
+}
