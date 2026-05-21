@@ -1,17 +1,18 @@
-# Curry Bible Commercial Content Policy
+# Commercial Content Policy
 
-## Reviews
+Curry Bible can sell:
 
-Review scores cannot be bought. Sponsored features and paid listings do not affect review scores.
+- featured listings
+- sponsored menu spotlights
+- owner interviews
+- website/menu help
+- affiliate product links
 
-## Sponsored content
+Curry Bible must not sell:
 
-Sponsored content should be clearly labelled.
+- review scores
+- fake praise
+- hidden sponsorships
+- misleading recommendations
 
-## Affiliate links
-
-Affiliate links should be disclosed clearly on pages that use them.
-
-## Tone
-
-Curry Bible can be funny, blunt and chaotic, but it should avoid confusing paid promotion with independent reviews.
+Any sponsored or affiliate content should be labelled clearly.

@@ -1,11 +1,26 @@
 # Wireframe Notes
 
-The prototype keeps Curry Bible as a review brand first and a money-making site second. The commercial parts are visible, but they do not overpower the content.
+## Direction
 
-## Important homepage choices
+Keep what makes the live site good: big headings, simple sections, light curry-coloured background, humour, and clear review-led identity.
 
-- The owner CTA is moved higher up the page.
-- Our Story, Our Mission and awards are linked respectfully from the homepage and footer.
-- Affiliate products are shown as example cards only.
-- Curry Map is deliberately simple until a WordPress Google Maps plugin is chosen.
-- Arcade is now accordion/dropdown based to reduce scrolling.
+Do not overcomplicate the layout. The previous prototype became too busy. This v3 version strips it back.
+
+## Navigation
+
+Main header:
+
+- Home
+- Reviews dropdown
+- Curry Map
+- Arcade
+- For Curry Houses
+- Approved Gear
+- Dark Mode
+- Get Featured
+
+The Rankings idea now lives inside Reviews as `View by Rank Order`.
+
+## Commercial rule
+
+Paid visibility is allowed. Paid scores are not.

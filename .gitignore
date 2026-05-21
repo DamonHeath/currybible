@@ -1,36 +1,28 @@
-# OS/editor
+# OS/editor junk
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Logs/cache
-*.log
-.cache/
-.tmp/
-
-# Packages/builds
+# Dependencies/build output
 node_modules/
 dist/
 build/
+.cache/
 
-# WordPress/backups/security-sensitive
+# WordPress/backups/secrets - do not commit these
 wp-config.php
 *.sql
-*.sqlite
-*.sqlite3
-*.bak
-*.backup
+*.sql.gz
 *.zip
 *.rar
 *.7z
 *.tar
 *.tar.gz
+backups/
+backup/
 public_html/
-wp-admin/
-wp-includes/
-wp-content/uploads/
 
-# Environment
+# Environment files
 .env
 .env.*
