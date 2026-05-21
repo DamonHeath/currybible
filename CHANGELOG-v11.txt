@@ -1,0 +1,26 @@
+# Curry Bible Static Conversion v11
+
+Changes:
+
+1. Removed the two explanatory cards from the Curry Bible Traditions page:
+   - “Where should these live?”
+   - “Why Keep This?”
+
+2. Added Approved Gear page:
+   - approved.html
+   - curry-related product box sections
+   - placeholder affiliate buttons
+   - affiliate notice
+
+3. Added policy pages:
+   - affiliate-disclosure.html
+   - sponsored-content-policy.html
+   - privacy-policy.html
+
+4. Updated Policies hub to link to the three policy pages.
+
+5. Added Approved Gear and policy links to footer navigation.
+
+6. Added a small Approved Gear teaser section to the homepage without changing the hero.
+
+No arcade code was changed.

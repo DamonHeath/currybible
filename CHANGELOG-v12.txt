@@ -1,0 +1,11 @@
+Curry Bible static conversion v12
+
+Changes made:
+- Added Approved Gear to the main header navigation across the static site.
+- Created approved-gear.html as the main GitHub Pages-friendly Approved Gear page.
+- Kept approved.html as a duplicate fallback so older links will not break.
+- Updated homepage/footer/policy links to point to approved-gear.html.
+- Left the hero, Arcade, Reviews, Curry Map, and For Curry Houses structures unchanged.
+
+Purpose:
+Approved Gear now has both a visible header route and a real static page for GitHub Pages.
