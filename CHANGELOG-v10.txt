@@ -1,0 +1,18 @@
+# Curry Bible Static Conversion v10 — Traditions Refinement
+
+Changes made:
+
+1. Kept Currier of the Month and Curry Cunt preserved.
+2. Reworked the homepage tradition section so it feels less blunt for first-time visitors.
+3. Homepage now shows:
+   - Currier of the Month
+   - The Table’s Shame
+4. The full Curry Cunt wording remains on the dedicated traditions page.
+5. Footer link now says “Curry Bible Traditions” rather than putting the harsher wording in every footer.
+6. Added an explanatory section to awards.html explaining why the traditions exist.
+7. Added minor CSS refinement only for the traditions section.
+
+No arcade/game changes.
+No hero changes.
+No review content changes.
+No Curry Map changes.

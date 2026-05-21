@@ -3544,3 +3544,64 @@ body.dark-mode .browse-card {
 .footer-links {
   column-gap: 1rem;
 }
+
+
+/* =====================
+   V10 HOMEPAGE TRADITIONS REFINEMENT
+===================== */
+
+.traditions-home-section {
+  padding-top: 4rem;
+}
+
+.traditions-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+  gap: 2rem;
+  align-items: end;
+}
+
+.tradition-feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.tradition-feature-card::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  right: -70px;
+  bottom: -80px;
+  border: 34px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.traditions-page-intro {
+  padding-bottom: 0;
+}
+
+.traditions-rules-section {
+  padding-top: 2rem;
+}
+
+.traditions-rules-section .story-card h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.traditions-rules-section .story-card p + p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 860px) {
+  .traditions-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
